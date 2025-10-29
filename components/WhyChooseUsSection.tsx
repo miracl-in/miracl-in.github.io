@@ -70,7 +70,7 @@ export default function WhyChooseUsSection() {
             Ready to experience the Miraclin Technologies difference?
           </p>
           <a 
-            href="#courses" 
+            href="/courses" 
             className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Explore Our Courses
