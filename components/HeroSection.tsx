@@ -2,14 +2,14 @@ import Image from "next/image"
 
 export default function HeroSection() {
   return (
-    <main className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 dark:from-blue-400/20 dark:to-purple-400/20"></div>
+    <main className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
       <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16 lg:py-20 flex flex-col lg:flex-row items-center gap-8 md:gap-10 lg:gap-12">
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
             Transform Your Tech Career with Expert-Led Training
           </h1>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             Master in-demand skills through hands-on courses designed by industry professionals.
             Build real projects, gain practical experience, and accelerate your career growth.
           </p>
@@ -24,26 +24,26 @@ export default function HeroSection() {
           </div>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 text-xs md:text-sm">
-            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <div className="flex items-center gap-2 text-gray-600">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span>Expert Instructors</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <div className="flex items-center gap-2 text-gray-600">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span>Hands-on Projects</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <div className="flex items-center gap-2 text-gray-600">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span>Career Support</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <div className="flex items-center gap-2 text-gray-600">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span>Flexible Learning</span>
             </div>
           </div>
         </div>
 
-        <div className="flex-1 w-full max-w-sm md:max-w-md lg:max-w-lg rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50 dark:ring-gray-700/50">
+        <div className="flex-1 w-full max-w-sm md:max-w-md lg:max-w-lg rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10"></div>
             <div className="w-full h-64 md:h-80 lg:h-96 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
