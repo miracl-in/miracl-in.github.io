@@ -1,11 +1,12 @@
 import Image from "next/image"
+import ScrollAnimation from './ScrollAnimation'
 
 export default function HeroSection() {
   return (
     <main className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
       <div className="relative max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-10">
-        <div className="flex-1 text-center lg:text-left">
+        <ScrollAnimation className="flex-1 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
             Transform Your Tech Career with Expert-Led Training
           </h1>
@@ -15,11 +16,13 @@ export default function HeroSection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-            <a href="/courses" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Start Learning Today
+            <a href="/courses" className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl relative overflow-hidden">
+              <span className="relative z-10">Start Learning Today</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
-            <a href="/courses" className="px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300">
-              Browse Courses
+            <a href="/courses" className="group px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden">
+              <span className="relative z-10">Browse Courses</span>
+              <div className="absolute inset-0 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </a>
           </div>
           
@@ -41,9 +44,9 @@ export default function HeroSection() {
               <span>Flexible Learning</span>
             </div>
           </div>
-        </div>
+        </ScrollAnimation>
 
-        <div className="flex-1 max-w-md rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50">
+        <ScrollAnimation delay={200} className="flex-1 max-w-md rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50 hover:shadow-3xl hover:scale-105 transition-all duration-500">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10"></div>
             <div className="w-full h-64 md:h-80 lg:h-96 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
@@ -53,7 +56,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
     </main>
   )
