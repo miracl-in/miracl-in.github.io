@@ -1,9 +1,9 @@
 const organizationDetails = [
-  { label: "Industry", value: "Technology Training & Education" },
-  { label: "Company Size", value: "11-50 employees" },
-  { label: "Headquarters", value: "Global" },
+  { label: "Industry", value: "Technology Education" },
+  { label: "Company Size", value: "1-10 employees" },
+  { label: "Headquarters", value: "India" },
   { label: "Type", value: "Professional Training" },
-  { label: "Founded", value: "2023" },
+  { label: "Founded", value: "2024" },
 ]
 
 export default function AboutSection() {
