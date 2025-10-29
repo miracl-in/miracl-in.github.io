@@ -6,24 +6,24 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 dark:from-blue-400/20 dark:to-purple-400/20"></div>
       <div className="relative max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-10">
         <div className="flex-1 text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
             Transform Your Tech Career with Expert-Led Training
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             Master in-demand skills through hands-on courses designed by industry professionals.
             Build real projects, gain practical experience, and accelerate your career growth.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-            <a href="/courses" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mb-6 md:mb-8">
+            <a href="/courses" className="px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
               Start Learning Today
             </a>
-            <a href="/courses" className="px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300">
+            <a href="/courses" className="px-6 md:px-8 py-3 md:py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm md:text-base">
               Browse Courses
             </a>
           </div>
           
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 text-xs md:text-sm">
             <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span>Expert Instructors</span>
