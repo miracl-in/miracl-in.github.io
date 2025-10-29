@@ -15,13 +15,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-20 w-full bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-5 shadow-lg">
+    <header className="sticky top-0 z-20 w-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 md:px-8 py-4 md:py-5 shadow-lg">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
             <span className="text-blue-600 font-bold text-xl">M</span>
           </div>
-          <span className="text-white font-bold text-xl hidden sm:block">Miraclin Technologies</span>
+          <span className="text-white font-bold text-lg md:text-xl hidden sm:block">Miraclin Technologies</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="px-5 py-2.5 rounded-lg text-white hover:bg-white/20 hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium transform hover:-translate-y-0.5 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out"
+              className="px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-white hover:bg-white/20 hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium transform hover:-translate-y-0.5 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out text-sm md:text-base"
             >
               {link.name}
             </Link>
