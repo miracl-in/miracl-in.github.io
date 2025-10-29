@@ -1,63 +1,43 @@
 const courses = [
   {
     id: 1,
-    name: "Full Stack Web Development",
-    description: "Master modern web development with React, Node.js, and databases. Build complete applications from frontend to backend with hands-on projects.",
+    name: "Python + DevSecOps",
+    description: "Master Python programming with DevSecOps practices. Learn secure coding, automated testing, and security integration in CI/CD pipelines.",
     duration: "3 months",
-    price: "$299",
-    features: ["React & Next.js", "Node.js & Express", "MongoDB & PostgreSQL", "Authentication & Security", "Deployment & DevOps"],
+    price: "₹3,500",
+    features: ["Python Programming", "Security Testing", "CI/CD Security", "Vulnerability Assessment", "Secure Code Review"],
     instructor: "Sarah Johnson",
     level: "Beginner to Advanced"
   },
   {
     id: 2,
-    name: "Data Science & Analytics",
-    description: "Learn Python, machine learning, and data visualization. Transform data into actionable insights for business decisions.",
-    duration: "4 months", 
-    price: "$399",
-    features: ["Python Programming", "Pandas & NumPy", "Machine Learning", "Data Visualization", "Statistical Analysis"],
+    name: "DevSecOps + Cloud Computing",
+    description: "Comprehensive DevSecOps with cloud security. Learn to secure cloud infrastructure, implement security automation, and manage cloud compliance.",
+    duration: "3 months", 
+    price: "₹4,000",
+    features: ["Cloud Security", "Infrastructure Security", "Compliance Automation", "Security Monitoring", "Incident Response"],
     instructor: "Dr. Michael Chen",
     level: "Intermediate"
   },
   {
     id: 3,
-    name: "Cloud Computing (AWS)",
-    description: "Get hands-on experience with AWS services. Prepare for cloud certifications and modern infrastructure management.",
-    duration: "2 months",
-    price: "$249",
-    features: ["AWS Core Services", "EC2 & S3", "Lambda Functions", "CloudFormation", "Security & Monitoring"],
+    name: "Next.js + DevOps",
+    description: "Build modern web applications with Next.js and deploy them using DevOps best practices. Master full-stack development with deployment automation.",
+    duration: "3 months",
+    price: "₹3,500",
+    features: ["Next.js Framework", "React Development", "CI/CD Pipelines", "Docker Deployment", "Cloud Hosting"],
     instructor: "Emily Rodriguez",
     level: "Beginner to Intermediate"
   },
   {
     id: 4,
-    name: "Mobile App Development",
-    description: "Build native mobile apps for iOS and Android using React Native. Create cross-platform applications efficiently.",
+    name: "Solidity + Blockchain Development",
+    description: "Learn blockchain development with Solidity. Build smart contracts, DApps, and understand cryptocurrency and DeFi protocols.",
     duration: "3 months",
-    price: "$329",
-    features: ["React Native", "iOS Development", "Android Development", "API Integration", "App Store Deployment"],
+    price: "₹4,000",
+    features: ["Solidity Programming", "Smart Contracts", "DApp Development", "Web3 Integration", "DeFi Protocols"],
     instructor: "James Wilson",
     level: "Intermediate"
-  },
-  {
-    id: 5,
-    name: "Cybersecurity Fundamentals",
-    description: "Learn essential cybersecurity concepts, ethical hacking, and security best practices for modern organizations.",
-    duration: "2.5 months",
-    price: "$279",
-    features: ["Network Security", "Ethical Hacking", "Risk Assessment", "Compliance", "Incident Response"],
-    instructor: "Alex Thompson",
-    level: "Beginner"
-  },
-  {
-    id: 6,
-    name: "DevOps Engineering",
-    description: "Master CI/CD pipelines, containerization, and infrastructure automation for modern software delivery.",
-    duration: "3.5 months",
-    price: "$349",
-    features: ["Docker & Kubernetes", "CI/CD Pipelines", "Infrastructure as Code", "Monitoring & Logging", "Cloud Platforms"],
-    instructor: "David Kumar",
-    level: "Intermediate to Advanced"
   }
 ]
 
@@ -74,7 +54,7 @@ export default function CoursesPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {courses.map((course) => (
             <div
               key={course.id}
