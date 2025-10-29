@@ -12,13 +12,13 @@ export default function CTASection() {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
-            href="#courses" 
+            href="/courses" 
             className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Browse All Courses
           </a>
           <a 
-            href="#contact" 
+            href="/contact" 
             className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300"
           >
             Get Free Consultation
