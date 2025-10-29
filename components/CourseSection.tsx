@@ -1,3 +1,5 @@
+import ScrollAnimation from './ScrollAnimation'
+
 const courses = [
   {
     id: 1,
@@ -26,21 +28,19 @@ export default function CourseSection() {
   return (
     <section id="courses" className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <ScrollAnimation className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Our Courses
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Explore our comprehensive range of technology courses designed to advance your career
           </p>
-        </div>
+        </ScrollAnimation>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {courses.map((course) => (
-            <div
-              key={course.id}
-              className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border border-gray-200/60 dark:border-gray-700/60 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 hover:border-blue-300/70 transition-all duration-500 p-8 flex flex-col justify-between h-full ring-1 ring-gray-100/50 dark:ring-gray-700/50 hover:ring-blue-300/60 hover:-translate-y-2 group overflow-hidden relative"
-            >
+          {courses.map((course, index) => (
+            <ScrollAnimation key={course.id} delay={index * 150}>
+              <div className="bg-white/90 backdrop-blur-md border border-gray-200/60 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 hover:border-blue-300/70 transition-all duration-500 p-8 flex flex-col justify-between h-full ring-1 ring-gray-100/50 hover:ring-blue-300/60 hover:-translate-y-4 hover:scale-105 group overflow-hidden relative cursor-pointer">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
               
               <div className="relative">
@@ -64,13 +64,15 @@ export default function CourseSection() {
                 </p>
               </div>
 
-              <a
-                href="/contact"
-                className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
-              >
-                Learn More
-              </a>
-            </div>
+                <a
+                  href="/contact"
+                  className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl text-center relative overflow-hidden group/btn"
+                >
+                  <span className="relative z-10">Learn More</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+                </a>
+              </div>
+            </ScrollAnimation>
           ))}
         </div>
 
