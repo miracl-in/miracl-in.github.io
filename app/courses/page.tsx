@@ -110,7 +110,7 @@ export default function CoursesPage() {
               Join thousands of professionals who have transformed their careers with our expert-led courses
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Get Free Consultation
