@@ -1,27 +1,27 @@
 const feedbacks = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    course: "Full Stack Development",
-    comment: "This course exceeded my expectations and provided practical skills I use daily in my work. The instructors were knowledgeable and supportive throughout the journey.",
-    date: "November 2023",
-    track: "PREMIUM"
-  },
-  {
-    id: 2,
-    name: "Michael Chen",
-    course: "Data Science & Analytics", 
-    comment: "The hands-on approach and real-world projects helped me transition into a data analyst role. Highly recommend for anyone looking to break into tech.",
-    date: "October 2023",
+    name: "Priya Sharma",
+    course: "Python + DevSecOps",
+    comment: "As one of the early students, I'm impressed by the quality of content and practical approach. The course structure is well-designed for beginners like me.",
+    date: "January 2024",
     track: "STANDARD"
   },
   {
-    id: 3,
-    name: "Emily Rodriguez",
-    course: "Cloud Computing (AWS)",
-    comment: "Excellent preparation for AWS certification. The practical labs and expert guidance made complex concepts easy to understand and apply.",
-    date: "December 2023",
+    id: 2,
+    name: "Rahul Kumar",
+    course: "Next.js + DevOps", 
+    comment: "Great learning experience! The instructors are passionate and the hands-on projects really help in understanding concepts. Looking forward to more courses.",
+    date: "February 2024",
     track: "PREMIUM"
+  },
+  {
+    id: 3,
+    name: "Anita Patel",
+    course: "DevSecOps + Cloud",
+    comment: "Excellent course content and affordable pricing. The practical labs and real-world examples make learning engaging. Excited to apply these skills.",
+    date: "March 2024",
+    track: "STANDARD"
   }
 ]
 
@@ -91,16 +91,16 @@ export default function FeedbackSection() {
         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white text-center mb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <div className="text-4xl font-bold mb-2">10+</div>
-              <div className="text-blue-100">Courses Available</div>
+              <div className="text-4xl font-bold mb-2">4</div>
+              <div className="text-blue-100">Course Programs</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">Expert</div>
-              <div className="text-blue-100">Instructors</div>
+              <div className="text-4xl font-bold mb-2">Fresh</div>
+              <div className="text-blue-100">Content & Approach</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">24/7</div>
-              <div className="text-blue-100">Learning Support</div>
+              <div className="text-4xl font-bold mb-2">₹3.5K</div>
+              <div className="text-blue-100">Starting Price</div>
             </div>
           </div>
         </div>
