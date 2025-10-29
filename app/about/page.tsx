@@ -25,13 +25,13 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  Founded by industry veterans with over 15 years of combined experience in software development, 
-                  DevOps, and cybersecurity. Our journey began when we realized the gap between traditional 
-                  education and industry requirements.
+                  Founded in 2024 by passionate technologists with industry experience in software development, 
+                  DevOps, and cybersecurity. Our journey began when we identified the gap between traditional 
+                  education and real-world industry requirements.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Having worked at top tech companies and trained hundreds of professionals, we created 
-                  Miraclin Technologies to bridge this gap with practical, hands-on learning experiences.
+                  As a fresh startup, we're committed to providing affordable, practical education that 
+                  prepares students for actual industry challenges through hands-on projects and mentorship.
                 </p>
               </div>
             </div>
@@ -76,41 +76,41 @@ export default function AboutPage() {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg font-bold text-blue-600 dark:text-blue-400">2023</span>
+                  <span className="text-lg font-bold text-blue-600 dark:text-blue-400">2024</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">Company Founded</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Launched with our first DevSecOps course</p>
+                  <p className="text-gray-600 dark:text-gray-300">Launched with comprehensive tech curriculum</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg font-bold text-green-600 dark:text-green-400">500+</span>
+                  <span className="text-lg font-bold text-green-600 dark:text-green-400">4</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Students Trained</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Across various technology domains</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Course Programs</h4>
+                  <p className="text-gray-600 dark:text-gray-300">Covering modern tech stacks and skills</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg font-bold text-purple-600 dark:text-purple-400">85%</span>
+                  <span className="text-lg font-bold text-purple-600 dark:text-purple-400">100%</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Placement Rate</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Students placed in top tech companies</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Practical Focus</h4>
+                  <p className="text-gray-600 dark:text-gray-300">Hands-on projects and real-world experience</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg font-bold text-orange-600 dark:text-orange-400">4.8</span>
+                  <span className="text-lg font-bold text-orange-600 dark:text-orange-400">₹3.5K</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Average Rating</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Based on student feedback and reviews</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Affordable Pricing</h4>
+                  <p className="text-gray-600 dark:text-gray-300">Starting from just ₹3,500 for 3-month courses</p>
                 </div>
               </div>
             </div>
@@ -124,26 +124,26 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="w-20 h-20 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">🏆</span>
+                  <span className="text-3xl">🚀</span>
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Best EdTech Startup 2024</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Recognized for innovative teaching methods</p>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Fresh Innovation</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Modern approach to tech education</p>
               </div>
               
               <div className="text-center">
                 <div className="w-20 h-20 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">⭐</span>
+                  <span className="text-3xl">🎯</span>
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Top Rated Platform</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Highest student satisfaction scores</p>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Industry Focused</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Curriculum designed for current market needs</p>
               </div>
               
               <div className="text-center">
                 <div className="w-20 h-20 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">🎖️</span>
+                  <span className="text-3xl">📚</span>
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Industry Partnership</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Certified training partner with tech giants</p>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Quality Content</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Carefully crafted learning materials</p>
               </div>
             </div>
           </div>
