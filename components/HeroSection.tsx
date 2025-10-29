@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <main className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 dark:from-blue-400/20 dark:to-purple-400/20"></div>
-      <div className="relative max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-10">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16 lg:py-20 flex flex-col lg:flex-row items-center gap-8 md:gap-10 lg:gap-12">
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
             Transform Your Tech Career with Expert-Led Training
@@ -43,11 +43,11 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="flex-1 max-w-md rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50 dark:ring-gray-700/50">
+        <div className="flex-1 w-full max-w-sm md:max-w-md lg:max-w-lg rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50 dark:ring-gray-700/50">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10"></div>
-            <div className="w-full h-80 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-              <span className="text-6xl">🎓</span>
+            <div className="w-full h-64 md:h-80 lg:h-96 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
+              <span className="text-4xl md:text-5xl lg:text-6xl">🎓</span>
             </div>
           </div>
         </div>
