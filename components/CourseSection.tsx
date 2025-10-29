@@ -39,27 +39,27 @@ export default function CourseSection() {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-white/90 backdrop-blur-md border border-gray-200/60 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 hover:border-blue-300/70 transition-all duration-500 p-8 flex flex-col justify-between h-full ring-1 ring-gray-100/50 hover:ring-blue-300/60 hover:-translate-y-2 group overflow-hidden relative"
+              className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border border-gray-200/60 dark:border-gray-700/60 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 hover:border-blue-300/70 transition-all duration-500 p-8 flex flex-col justify-between h-full ring-1 ring-gray-100/50 dark:ring-gray-700/50 hover:ring-blue-300/60 hover:-translate-y-2 group overflow-hidden relative"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
               
               <div className="relative">
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
                 
-                <h2 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">
                   {course.name}
                 </h2>
 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-400">
                     {course.duration}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400">
                     {course.price}
                   </span>
                 </div>
                 
-                <p className="text-gray-600 leading-relaxed text-sm line-clamp-3 mb-6">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm line-clamp-3 mb-6">
                   {course.description}
                 </p>
               </div>
