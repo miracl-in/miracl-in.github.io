@@ -9,15 +9,23 @@ import CTASection from '@/components/CTASection'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <HeroSection />
-      <FeaturesSection />
-      <HowItWorksSection />
-      <WhyChooseUsSection />
-      <AboutSection />
-      <CourseSection />
-      <FeedbackSection />
-      <CTASection />
-    </main>
+    <>
+      <main className="min-h-screen">
+        <HeroSection />
+        <FeaturesSection />
+        <HowItWorksSection />
+        <WhyChooseUsSection />
+        <div className="px-4">
+          <AboutSection />
+        </div>
+        <div className="px-4">
+          <CourseSection />
+        </div>
+        <div className="px-4">
+          <FeedbackSection />
+        </div>
+        <CTASection />
+      </main>
+    </>
   )
 }
