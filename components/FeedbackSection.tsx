@@ -107,7 +107,7 @@ export default function FeedbackSection() {
 
         <div className="text-center">
           <a 
-            href="#contact" 
+            href="/contact" 
             className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Read More Success Stories
