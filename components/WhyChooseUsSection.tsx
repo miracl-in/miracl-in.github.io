@@ -21,8 +21,8 @@ const advantages = [
   },
   {
     icon: "🌟",
-    title: "Proven Track Record",
-    description: "Our graduates work at top tech companies and have successfully transitioned to high-paying tech roles."
+    title: "Quality First Approach",
+    description: "As a new organization, we focus on delivering high-quality content and personalized attention to every student."
   },
   {
     icon: "💡",
