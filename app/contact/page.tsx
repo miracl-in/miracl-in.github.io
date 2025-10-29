@@ -22,7 +22,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-600">info@miraclintechnologies.com</p>
+                  <p className="text-gray-600">info@---------.com</p>
                 </div>
               </div>
 
@@ -51,36 +51,31 @@ export default function ContactPage() {
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
             
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" placeholder="Your Name" />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input type="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" placeholder="your@email.com" />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Course Interest</label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
-                  <option>Select a course</option>
-                  <option>Full Stack Web Development</option>
-                  <option>Data Science & Analytics</option>
-                  <option>Cloud Computing (AWS)</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea rows={4} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" placeholder="Tell us about your goals..."></textarea>
-              </div>
-
-              <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300">
-                Send Message
-              </button>
-            </form>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSduVlTEm5Ex5GXjYkvb3eXtRrYC8mqB6msjH-AnTzGc9g446Q/viewform?embedded=true" 
+                width="100%" 
+                height="600" 
+                frameBorder="0" 
+                marginHeight={0} 
+                marginWidth={0}
+                className="rounded-lg"
+              >
+                Loading…
+              </iframe>
+            </div>
+            
+            <div className="text-center mt-6">
+              <p className="text-gray-600 mb-4">Prefer to fill out the form in a new tab?</p>
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSduVlTEm5Ex5GXjYkvb3eXtRrYC8mqB6msjH-AnTzGc9g446Q/viewform" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+              >
+                Open Google Form
+              </a>
+            </div>
           </div>
         </div>
       </div>
