@@ -162,13 +162,13 @@ export default function PrivacyPage() {
         {/* Contact Information */}
         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-6 md:p-8 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">Questions About Our Policies?</h2>
-          <p className="mb-6 opacity-90">Contact our legal team for any questions about privacy, terms, or data protection.</p>
+          <p className="mb-6 opacity-90">Contact our team for any questions about privacy, terms, or data protection.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/contact" className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
               Contact Us
             </a>
-            <a href="mailto:legal@miraclintech.com" className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors">
-              Email Legal Team
+            <a href="https://forms.google.com/policy-questions" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors">
+              Policy Questions Form
             </a>
           </div>
         </div>
