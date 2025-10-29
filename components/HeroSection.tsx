@@ -46,13 +46,13 @@ export default function HeroSection() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation delay={200} className="flex-1 max-w-md rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50 hover:shadow-3xl hover:scale-105 transition-all duration-500">
-          <div className="relative">
+        <ScrollAnimation delay={200} className="flex-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200/50 hover:shadow-3xl hover:scale-105 transition-all duration-500">
+          <div className="relative aspect-square sm:aspect-[4/3] md:aspect-[3/2] lg:aspect-square">
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10"></div>
-            <div className="w-full h-64 md:h-80 lg:h-96 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
+            <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center p-4">
               <div className="text-center">
-                <div className="text-6xl md:text-7xl lg:text-8xl mb-4">🎓</div>
-                <p className="text-gray-600 text-sm md:text-base">Students Learning Together</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-2 sm:mb-4 transform hover:scale-110 transition-transform duration-300">🎓</div>
+                <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium">Students Learning Together</p>
               </div>
             </div>
           </div>
