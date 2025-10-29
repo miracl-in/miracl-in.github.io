@@ -45,22 +45,22 @@ export default function CoursesPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 md:mb-6">
             Our Courses
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Comprehensive technology courses designed by industry experts to advance your career and transform your future
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {courses.map((course) => (
             <div
               key={course.id}
               className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden"
             >
-              <div className="p-8">
+              <div className="p-6 md:p-8">
                 <div className="flex justify-between items-start mb-4">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
                     {course.level}
@@ -68,11 +68,11 @@ export default function CoursesPage() {
                   <span className="text-2xl font-bold text-green-600">{course.price}</span>
                 </div>
 
-                <h2 className="text-xl font-bold text-gray-900 mb-3">
+                <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
                   {course.name}
                 </h2>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
                   {course.description}
                 </p>
 
@@ -95,7 +95,7 @@ export default function CoursesPage() {
                   </ul>
                 </div>
 
-                <a href="/contact" className="block w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 text-center">
+                <a href="/contact" className="block w-full px-4 md:px-6 py-2.5 md:py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 text-center text-sm md:text-base">
                   Enroll Now
                 </a>
               </div>
@@ -103,15 +103,15 @@ export default function CoursesPage() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
-            <h2 className="text-3xl font-bold mb-4">Ready to Start Learning?</h2>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+        <div className="text-center mt-12 md:mt-16">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 md:p-8 text-white">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Start Learning?</h2>
+            <p className="text-sm md:text-base text-blue-100 mb-6 max-w-2xl mx-auto">
               Join thousands of professionals who have transformed their careers with our expert-led courses
             </p>
             <a
               href="/contact"
-              className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="inline-block px-6 md:px-8 py-3 md:py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 text-sm md:text-base"
             >
               Get Free Consultation
             </a>
