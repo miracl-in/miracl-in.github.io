@@ -146,7 +146,7 @@ export default function TeamPage() {
               Get personalized guidance from industry experts and accelerate your tech career
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Start Your Journey
