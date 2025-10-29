@@ -27,16 +27,16 @@ const feedbacks = [
 
 export default function FeedbackSection() {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white dark:bg-gray-900 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-blue-50 text-blue-600 text-sm font-semibold rounded-full mb-4">
+          <span className="inline-block px-4 py-2 bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-400 text-sm font-semibold rounded-full mb-4">
             TESTIMONIALS
           </span>
-          <h2 className="text-4xl font-bold mb-6 text-gray-900">
+          <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">
             Success Stories from Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Students</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
             Discover how our comprehensive training programs have empowered professionals to advance their careers and achieve their goals
           </p>
         </div>
@@ -45,8 +45,8 @@ export default function FeedbackSection() {
           {feedbacks.map((feedback, index) => (
             <div
               key={feedback.id}
-              className={`bg-white rounded-3xl p-8 border-2 transition-all duration-300 hover:-translate-y-2 ${
-                index === 1 ? 'border-blue-600 shadow-xl scale-105' : 'border-gray-100 hover:border-blue-600/30 hover:shadow-lg'
+              className={`bg-white dark:bg-gray-800 rounded-3xl p-8 border-2 transition-all duration-300 hover:-translate-y-2 ${
+                index === 1 ? 'border-blue-600 shadow-xl scale-105' : 'border-gray-100 dark:border-gray-700 hover:border-blue-600/30 hover:shadow-lg'
               }`}
             >
               <div className="flex gap-1 mb-6">
@@ -57,7 +57,7 @@ export default function FeedbackSection() {
                 ))}
               </div>
               
-              <blockquote className="text-gray-600 text-base leading-relaxed mb-8 font-medium">
+              <blockquote className="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-8 font-medium">
                 "{feedback.comment}"
               </blockquote>
               
@@ -67,20 +67,20 @@ export default function FeedbackSection() {
                 </div>
                 
                 <div>
-                  <h4 className="font-bold text-gray-900 text-base">
+                  <h4 className="font-bold text-gray-900 dark:text-white text-base">
                     {feedback.name}
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
                     Graduate • {feedback.course}
                   </p>
-                  <p className="text-gray-500 text-xs mt-1">
+                  <p className="text-gray-500 dark:text-gray-400 text-xs mt-1">
                     {feedback.date}
                   </p>
                 </div>
               </div>
               
               <div className="mt-4">
-                <span className="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">
+                <span className="inline-flex items-center px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-400 text-xs font-semibold rounded-full">
                   {feedback.track} TRACK
                 </span>
               </div>
