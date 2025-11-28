@@ -151,39 +151,6 @@ export default function FAQPage() {
           </div>
         ))}
 
-        {/* Learning Guides */}
-        <div className="mt-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
-            Learning Guides
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">📚</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Getting Started Guide</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Step-by-step guide to begin your learning journey with us.
-              </p>
-              <a href="#" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
-                Read Guide →
-              </a>
-            </div>
-            
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">🛠️</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Technical Setup</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Complete guide to set up your development environment.
-              </p>
-              <a href="#" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
-                Setup Guide →
-              </a>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
