@@ -15,6 +15,15 @@ export default function Footer() {
             <p className="text-gray-300 mb-4 max-w-md">
               Empowering the next generation of tech professionals through innovative, practical, and affordable learning experiences.
             </p>
+            <div className="space-y-2 mb-4">
+              <p className="text-gray-300 text-sm">
+                📍 Miraclin Technologies<br />
+                No. 35 & 36, 1st Floor<br />
+                Infant Jesus Commercial Complex<br />
+                Near Infant Jesus Church, Pudukottai Road<br />
+                Thanjavur - 613005
+              </p>
+            </div>
             <div className="flex gap-4">
               <a href="mailto:miraclintech@gmail.com" className="text-gray-300 hover:text-white transition-colors">
                 📧 miraclintech@gmail.com
