@@ -7,9 +7,11 @@ import { useState } from "react"
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Courses", href: "/courses" },
-  { name: "Team", href: "/team" },
+  { name: "Research & Development", href: "/research" },
+  { name: "Team", href: "/team", hidden: true },
   { name: "About", href: "/about" },
-  { name: "FAQ", href: "/faq" },
+  { name: "Career", href: "/career" },
+  { name: "FAQ", href: "/faq", hidden: true },
   { name: "Contact", href: "/contact" }
 ]
 
@@ -28,7 +30,7 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
-          {navLinks.map((link) => (
+          {navLinks.filter(link => !link.hidden).map((link) => (
             <Link
               key={link.name}
               href={link.href}
@@ -53,7 +55,7 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       {isOpen && (
         <nav className="md:hidden mt-4 pb-4">
-          {navLinks.map((link) => (
+          {navLinks.filter(link => !link.hidden).map((link) => (
             <Link
               key={link.name}
               href={link.href}
