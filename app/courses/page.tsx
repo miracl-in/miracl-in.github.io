@@ -6,7 +6,7 @@ const courses = [
     duration: "3 months",
     price: "₹3,500",
     features: ["Python Programming", "Security Testing", "CI/CD Security", "Vulnerability Assessment", "Secure Code Review"],
-    instructor: "Sarah Johnson",
+    instructor: "fsociety.in",
     level: "Beginner to Advanced"
   },
   {
@@ -16,7 +16,7 @@ const courses = [
     duration: "3 months", 
     price: "₹4,000",
     features: ["Cloud Security", "Infrastructure Security", "Compliance Automation", "Security Monitoring", "Incident Response"],
-    instructor: "Dr. Michael Chen",
+    instructor: "fsociety.in",
     level: "Intermediate"
   },
   {
@@ -26,7 +26,7 @@ const courses = [
     duration: "3 months",
     price: "₹3,500",
     features: ["Next.js Framework", "React Development", "CI/CD Pipelines", "Docker Deployment", "Cloud Hosting"],
-    instructor: "Emily Rodriguez",
+    instructor: "fsociety.in",
     level: "Beginner to Intermediate"
   },
   {
@@ -36,7 +36,7 @@ const courses = [
     duration: "3 months",
     price: "₹4,000",
     features: ["Solidity Programming", "Smart Contracts", "DApp Development", "Web3 Integration", "DeFi Protocols"],
-    instructor: "James Wilson",
+    instructor: "fsociety.in",
     level: "Intermediate"
   }
 ]
@@ -88,7 +88,7 @@ export default function CoursesPage() {
                 <div className="mb-4">
                   <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
                     <span>📅 {course.duration}</span>
-                    <span>👨🏫 {course.instructor}</span>
+                    {/* <span>👨🏫 {course.instructor}</span> */}
                   </div>
                 </div>
 
