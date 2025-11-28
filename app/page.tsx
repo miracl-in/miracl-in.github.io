@@ -21,9 +21,9 @@ export default function Home() {
         <div className="px-4">
           <CourseSection />
         </div>
-        <div className="px-4">
+        {/* <div className="px-4">
           <FeedbackSection />
-        </div>
+        </div> */}
         <CTASection />
       </main>
     </>
