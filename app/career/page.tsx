@@ -104,7 +104,7 @@ export default function CareerPage() {
                 </div>
                 <p className="text-gray-700 mb-6">{job.description}</p>
                 <a 
-                  href="mailto:miraclintech@gmail.com?subject=Application for ${job.title}"
+                  href={`mailto:miraclintech@gmail.com?subject=Application for ${job.title}`}
                   className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all"
                 >
                   Apply Now
