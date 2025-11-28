@@ -22,9 +22,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-20 w-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 md:px-8 py-4 md:py-5 shadow-lg">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-            <span className="text-blue-600 font-bold text-xl">M</span>
-          </div>
+          <img 
+            src="/favicon.ico" 
+            alt="Miraclin Technologies" 
+            className="w-10 h-10 rounded-lg object-cover"
+          />
           <span className="text-white font-bold text-lg md:text-xl hidden sm:block">Miraclin Technologies</span>
         </Link>
 
