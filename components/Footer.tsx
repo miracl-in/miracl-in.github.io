@@ -16,8 +16,8 @@ export default function Footer() {
               Empowering the next generation of tech professionals through innovative, practical, and affordable learning experiences.
             </p>
             <div className="flex gap-4">
-              <a href="mailto:info@miraclintech.com" className="text-gray-300 hover:text-white transition-colors">
-                📧 info@miraclintech.com
+              <a href="mailto:miraclintech@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                📧 miraclintech@gmail.com
               </a>
             </div>
           </div>
@@ -27,7 +27,6 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/courses" className="text-gray-300 hover:text-white transition-colors">Courses</a></li>
-              <li><a href="/team" className="text-gray-300 hover:text-white transition-colors">Team</a></li>
               <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
               <li><a href="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
               <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
