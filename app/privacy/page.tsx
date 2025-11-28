@@ -167,9 +167,9 @@ export default function PrivacyPage() {
             <a href="/contact" className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
               Contact Us
             </a>
-            <a href="https://forms.google.com/policy-questions" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors">
+            {/* <a href="https://forms.google.com/policy-questions" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors">
               Policy Questions Form
-            </a>
+            </a> */}
           </div>
         </div>
 
