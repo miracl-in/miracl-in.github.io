@@ -38,6 +38,22 @@ export default function ContactPage() {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <span className="text-blue-600 text-xl">📍</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
+                  <p className="text-gray-600">
+                    Miraclin Technologies<br />
+                    No. 35 & 36, 1st Floor<br />
+                    Infant Jesus Commercial Complex<br />
+                    Near Infant Jesus Church, Pudukottai Road<br />
+                    Thanjavur - 613005
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                   <span className="text-blue-600 text-xl">⏰</span>
                 </div>
                 <div>
