@@ -3,24 +3,51 @@ import ScrollAnimation from './ScrollAnimation'
 const courses = [
   {
     id: 1,
-    name: "Python + DevSecOps",
-    description: "Master Python programming with DevSecOps practices. Learn secure coding, automated testing, and security integration in CI/CD pipelines.",
-    duration: "3 months",
-    price: "₹3,500"
+    name: "Python Programming",
+    description: "Master Python from basics to advanced. Learn data structures, OOP, file handling, and build real-world applications with Python.",
+    duration: "2 months",
+    price: "₹3,000",
+    level: "Beginner to Advanced"
   },
   {
     id: 2,
-    name: "DevSecOps + Cloud Computing",
-    description: "Comprehensive DevSecOps with cloud security. Learn to secure cloud infrastructure and implement security automation.",
-    duration: "3 months", 
-    price: "₹4,000"
+    name: "DevSecOps",
+    description: "Learn DevSecOps practices and security integration in CI/CD pipelines. Master automated testing, security scanning, and secure deployment.",
+    duration: "2 months",
+    price: "₹8,000",
+    level: "Intermediate"
   },
   {
     id: 3,
-    name: "Next.js + DevOps",
-    description: "Build modern web applications with Next.js and deploy them using DevOps best practices with deployment automation.",
-    duration: "3 months",
-    price: "₹3,500"
+    name: "Cloud Computing (Azure + AWS)",
+    description: "Master both Azure and AWS cloud platforms. Learn cloud security, deployment, monitoring, and multi-cloud infrastructure management.",
+    duration: "3 months", 
+    price: "₹10,000",
+    level: "Intermediate"
+  },
+  {
+    id: 4,
+    name: "DevOps",
+    description: "Master DevOps practices with Docker, Kubernetes, and CI/CD pipelines. Learn deployment automation and infrastructure management.",
+    duration: "2 months",
+    price: "₹6,000",
+    level: "Intermediate"
+  },
+  {
+    id: 5,
+    name: "Blockchain Development",
+    description: "Learn blockchain technology and smart contract development with Solidity. Build DApps, understand cryptocurrency, and master DeFi protocols.",
+    duration: "2 months",
+    price: "₹5,000",
+    level: "Intermediate to Advanced"
+  },
+  {
+    id: 6,
+    name: "AI Agents & Agentic AI",
+    description: "Learn to build intelligent AI agents and agentic systems. Master LLMs, autonomous agents, and AI-powered automation for real-world applications.",
+    duration: "2 months",
+    price: "₹10,000",
+    level: "Intermediate to Advanced"
   }
 ]
 
@@ -51,6 +78,9 @@ export default function CourseSection() {
                 </h2>
 
                 <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-400">
+                    {course.level}
+                  </span>
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-400">
                     {course.duration}
                   </span>
