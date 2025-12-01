@@ -15,7 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/research',
     '/project-support',
     '/faq',
-    '/privacy'
+    '/privacy',
+    '/blog',
+    '/locations/thanjavur',
+    '/ai-training-thanjavur'
   ]
 
   // Course pages
