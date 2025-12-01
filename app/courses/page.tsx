@@ -1,6 +1,7 @@
 const courses = [
   {
     id: 1,
+    slug: "python-programming",
     name: "Python Programming",
     description: "Master Python from basics to advanced. Learn data structures, OOP, file handling, and build real-world applications with Python.",
     duration: "2 months",
@@ -12,6 +13,7 @@ const courses = [
   },
   {
     id: 2,
+    slug: "devsecops",
     name: "DevSecOps",
     description: "Learn DevSecOps practices and security integration in CI/CD pipelines. Master automated testing, security scanning, and secure deployment.",
     duration: "2 months",
@@ -23,6 +25,7 @@ const courses = [
   },
   {
     id: 3,
+    slug: "cloud-computing",
     name: "Cloud Computing (Azure + AWS)",
     description: "Master both Azure and AWS cloud platforms. Learn cloud security, deployment, monitoring, and multi-cloud infrastructure management.",
     duration: "3 months", 
@@ -34,6 +37,7 @@ const courses = [
   },
   {
     id: 4,
+    slug: "devops",
     name: "DevOps",
     description: "Master DevOps practices with Docker, Kubernetes, and CI/CD pipelines. Learn deployment automation and infrastructure management.",
     duration: "2 months",
@@ -45,6 +49,7 @@ const courses = [
   },
   {
     id: 5,
+    slug: "blockchain-development",
     name: "Blockchain Development",
     description: "Learn blockchain technology and smart contract development with Solidity. Build DApps, understand cryptocurrency, and master DeFi protocols.",
     duration: "2 months",
@@ -56,6 +61,7 @@ const courses = [
   },
   {
     id: 6,
+    slug: "linux",
     name: "Linux",
     description: "Master Linux operating system fundamentals. Learn command line, shell scripting, system administration, and server management.",
     duration: "1 month",
@@ -67,6 +73,7 @@ const courses = [
   },
   {
     id: 7,
+    slug: "azure",
     name: "Azure",
     description: "Learn Microsoft Azure cloud platform. Master Azure services, deployment, security, and cloud infrastructure management.",
     duration: "2 months",
@@ -78,6 +85,7 @@ const courses = [
   },
   {
     id: 8,
+    slug: "aws",
     name: "AWS",
     description: "Master Amazon Web Services cloud platform. Learn AWS services, architecture, security, and cloud infrastructure deployment.",
     duration: "2 months",
@@ -89,6 +97,7 @@ const courses = [
   },
   {
     id: 9,
+    slug: "terraform",
     name: "Terraform",
     description: "Master Infrastructure as Code with Terraform. Learn to automate cloud infrastructure provisioning and management across multiple platforms.",
     duration: "1 month",
@@ -100,6 +109,7 @@ const courses = [
   },
   {
     id: 10,
+    slug: "ai-agents",
     name: "AI Agents & Agentic AI",
     description: "Learn to build intelligent AI agents and agentic systems. Master LLMs, autonomous agents, and AI-powered automation for real-world applications.",
     duration: "2 months",
@@ -111,6 +121,7 @@ const courses = [
   },
   {
     id: 11,
+    slug: "full-stack-ai-devsecops-cloud",
     name: "Full Stack AI + DevSecOps + Cloud Course",
     description: "Comprehensive 5-month program covering AI development, full-stack applications, DevSecOps practices, and cloud infrastructure. Build intelligent, secure, scalable applications from development to production.",
     duration: "5 months",
@@ -122,6 +133,7 @@ const courses = [
   },
   {
     id: 12,
+    slug: "job-assistance",
     name: "Job Assistance & Confidence Boosting Programme",
     description: "FREE for Full Stack course students! Comprehensive career support including resume building, interview preparation, mock interviews, and confidence building sessions to help you land your dream job.",
     duration: "Ongoing Support",
@@ -196,10 +208,10 @@ export default function CoursesPage() {
                 </div>
 
                 <a
-                  href="/contact"
+                  href={course.slug ? `/courses/${course.slug}` : "/contact"}
                   className="block w-full text-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all transform hover:scale-105"
                 >
-                  Enroll Now
+                  Learn More
                 </a>
               </div>
             </div>
