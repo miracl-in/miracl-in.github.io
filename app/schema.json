@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Miraclin Technologies",
+  "description": "Technology training institute specializing in AI, DevSecOps, Cloud Computing, and Full-Stack Development",
+  "url": "https://miracl.in",
+  "logo": "https://miracl.in/icon.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 35 & 36, 1st Floor, Infant Jesus Commercial Complex, Near Infant Jesus Church, Pudukottai Road",
+    "addressLocality": "Thanjavur",
+    "postalCode": "613005",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-6381612228",
+    "contactType": "customer service",
+    "email": "miraclintech@gmail.com"
+  },
+  "sameAs": [
+    "https://linkedin.com/company/miraclin"
+  ]
+}
