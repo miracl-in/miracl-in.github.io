@@ -1,9 +1,9 @@
 const organizationDetails = [
   { label: "Industry", value: "Technology Education" },
-  { label: "Company Size", value: "1-10 employees" },
+  { label: "Company Size", value: "Growing Team" },
   { label: "Headquarters", value: "India" },
-  { label: "Type", value: "Professional Training" },
-  { label: "Founded", value: "2024" },
+  { label: "Type", value: "EdTech & Training" },
+  { label: "Founded", value: "2025" },
 ]
 
 export default function AboutSection() {
@@ -17,14 +17,14 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              Miraclin Technologies is a leading provider of professional technology training
-              and career development programs. We specialize in delivering high-quality,
-              industry-relevant courses that prepare professionals for success in the
-              rapidly evolving tech landscape.
+              Miraclin Technologies is a modern EdTech company specializing in cutting-edge technology training. 
+              We offer comprehensive courses in AI, DevSecOps, Cloud Computing, Blockchain, and Full-Stack Development, 
+              designed to make students industry-ready from day one.
             </p>
             <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
-              Our mission is to bridge the gap between academic learning and industry requirements,
-              providing hands-on training that empowers individuals to excel in their tech careers.
+              Our mission is to bridge the gap between academic learning and industry requirements through 
+              hands-on, practical training. We don't just teach—we mentor, guide, and ensure every student 
+              gains real-world skills and confidence to excel in their tech careers.
             </p>
           </div>
           
