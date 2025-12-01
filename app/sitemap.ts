@@ -18,7 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/blog',
     '/locations/thanjavur',
-    '/ai-training-thanjavur'
+    '/ai-training-thanjavur',
+    '/devops-training-thanjavur',
+    '/python-training-thanjavur',
+    '/ethical-hacking-course-thanjavur'
   ]
 
   // Course pages
