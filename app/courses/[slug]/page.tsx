@@ -1,4 +1,4 @@
-import { coursesData } from '../courseData'
+import { coursesData } from '@/app/courses/courseData'
 import { Metadata } from 'next'
 
 export async function generateStaticParams() {
