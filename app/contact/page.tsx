@@ -104,6 +104,23 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+
+        {/* Google Map Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Find Us Here</h2>
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.481442874992!2d79.12436989999999!3d10.7577043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab9f17c865e79%3A0x8a0d8bc806849555!2sMiraclin%20Technologies!5e1!3m2!1sen!2sin!4v1764603074812!5m2!1sen!2sin"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </main>
   )
