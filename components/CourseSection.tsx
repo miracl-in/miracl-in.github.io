@@ -4,6 +4,7 @@ const courses = [
   {
     id: 1,
     name: "Python Programming",
+    slug: "python-programming",
     description: "Master Python from basics to advanced. Learn data structures, OOP, file handling, and build real-world applications with Python.",
     duration: "2 months",
     price: "₹3,000",
@@ -12,6 +13,7 @@ const courses = [
   {
     id: 2,
     name: "DevSecOps",
+    slug: "devsecops",
     description: "Learn DevSecOps practices and security integration in CI/CD pipelines. Master automated testing, security scanning, and secure deployment.",
     duration: "2 months",
     price: "₹8,000",
@@ -20,6 +22,7 @@ const courses = [
   {
     id: 3,
     name: "Cloud Computing (Azure + AWS)",
+    slug: "cloud-computing",
     description: "Master both Azure and AWS cloud platforms. Learn cloud security, deployment, monitoring, and multi-cloud infrastructure management.",
     duration: "3 months", 
     price: "₹10,000",
@@ -28,6 +31,7 @@ const courses = [
   {
     id: 4,
     name: "DevOps",
+    slug: "devops",
     description: "Master DevOps practices with Docker, Kubernetes, and CI/CD pipelines. Learn deployment automation and infrastructure management.",
     duration: "2 months",
     price: "₹6,000",
@@ -36,6 +40,7 @@ const courses = [
   {
     id: 5,
     name: "Blockchain Development",
+    slug: "blockchain-development",
     description: "Learn blockchain technology and smart contract development with Solidity. Build DApps, understand cryptocurrency, and master DeFi protocols.",
     duration: "2 months",
     price: "₹5,000",
@@ -44,6 +49,7 @@ const courses = [
   {
     id: 6,
     name: "AI Agents & Agentic AI",
+    slug: "ai-agents",
     description: "Learn to build intelligent AI agents and agentic systems. Master LLMs, autonomous agents, and AI-powered automation for real-world applications.",
     duration: "2 months",
     price: "₹10,000",
@@ -95,7 +101,7 @@ export default function CourseSection() {
               </div>
 
                 <a
-                  href="/contact"
+                  href={`/courses/${course.slug}`}
                   className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl text-center relative overflow-hidden group/btn"
                 >
                   <span className="relative z-10">Learn More</span>
