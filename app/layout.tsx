@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     images: ['/hero-image.jpeg']
   },
   verification: {
-    google: 'your-google-verification-code'
+    google: '-vxmtRm92qhkpFnw1WWDw3eDAG6qWmfzWxEtXocFyTk'
   }
 }
 
