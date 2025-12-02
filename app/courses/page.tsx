@@ -235,7 +235,14 @@ export default function CoursesPage() {
               <tbody>
                 {upcomingBatches.map((batch, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
-                    <td className="py-4 px-4 font-medium text-gray-900">{batch.course}</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">
+                      {batch.course}
+                      {batch.course === "Full Stack AI + DevSecOps + Cloud" && (
+                        <span className="ml-2 px-2 py-1 bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs font-bold rounded-full animate-pulse">
+                          🔥 HOT
+                        </span>
+                      )}
+                    </td>
                     <td className="py-4 px-4 text-gray-600">{batch.startDate}</td>
                     <td className="py-4 px-4">
                       <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">
@@ -272,8 +279,15 @@ export default function CoursesPage() {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:-translate-y-2 border border-gray-100"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:-translate-y-2 border border-gray-100 relative"
             >
+              {course.slug === "full-stack-ai-devsecops-cloud" && (
+                <div className="absolute top-4 right-4 z-10">
+                  <span className="px-3 py-1 bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs font-bold rounded-full shadow-lg animate-pulse">
+                    🔥 HOT OFFER
+                  </span>
+                </div>
+              )}
               <div className="h-2 bg-gradient-to-r from-blue-600 to-purple-600"></div>
               
               <div className="p-6 md:p-8">
