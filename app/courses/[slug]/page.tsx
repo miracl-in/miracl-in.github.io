@@ -1,4 +1,5 @@
 import { coursesData } from '@/app/courses/courseData'
+import { siteConfig } from '@/app/config'
 import { Metadata } from 'next'
 
 export async function generateStaticParams() {
@@ -41,7 +42,9 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
           <div className="flex flex-wrap gap-4 mb-6">
             <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg font-semibold">{course.level}</span>
             <span className="px-4 py-2 bg-green-100 text-green-800 rounded-lg font-semibold">{course.duration}</span>
-            <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-lg font-semibold">{course.price}</span>
+            {siteConfig.showCourseFees && (
+              <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-lg font-semibold">{course.price}</span>
+            )}
           </div>
 
           <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
