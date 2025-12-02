@@ -1,4 +1,5 @@
 import ScrollAnimation from './ScrollAnimation'
+import { siteConfig } from '@/app/config'
 
 const courses = [
   {
@@ -90,9 +91,11 @@ export default function CourseSection() {
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-400">
                     {course.duration}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400">
-                    {course.price}
-                  </span>
+                  {siteConfig.showCourseFees && (
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400">
+                      {course.price}
+                    </span>
+                  )}
                 </div>
                 
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm line-clamp-3 mb-6">
