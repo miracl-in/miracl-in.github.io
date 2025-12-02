@@ -81,7 +81,7 @@ export default function Navbar() {
                   </svg>
                 </Link>
                 {showCoursesDropdown && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-30">
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-30 max-h-96 overflow-y-auto">
                     {courses.map((course) => (
                       <Link
                         key={course.slug}
