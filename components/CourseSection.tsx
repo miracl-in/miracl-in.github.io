@@ -75,6 +75,13 @@ export default function CourseSection() {
           {courses.map((course, index) => (
             <ScrollAnimation key={course.id} delay={index * 150}>
               <div className="bg-white/90 backdrop-blur-md border border-gray-200/60 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 hover:border-blue-300/70 transition-all duration-500 p-8 flex flex-col justify-between h-full ring-1 ring-gray-100/50 hover:ring-blue-300/60 hover:-translate-y-4 hover:scale-105 group overflow-hidden relative cursor-pointer">
+              {course.slug === "full-stack-ai-devsecops-cloud" && (
+                <div className="absolute top-4 right-4 z-10">
+                  <span className="px-3 py-1 bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs font-bold rounded-full shadow-lg animate-pulse">
+                    🔥 HOT OFFER
+                  </span>
+                </div>
+              )}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
               
               <div className="relative">
