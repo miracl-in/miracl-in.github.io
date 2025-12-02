@@ -1,3 +1,5 @@
+import { siteConfig } from '@/app/config'
+
 const courses = [
   {
     id: 1,
@@ -172,12 +174,14 @@ export default function CoursesPage() {
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
                     {course.level}
                   </span>
-                  <div className="text-right">
-                    {course.originalPrice && (
-                      <span className="text-sm text-gray-400 line-through block">{course.originalPrice}</span>
-                    )}
-                    <span className="text-2xl font-bold text-green-600">{course.price}</span>
-                  </div>
+                  {siteConfig.showCourseFees && (
+                    <div className="text-right">
+                      {course.originalPrice && (
+                        <span className="text-sm text-gray-400 line-through block">{course.originalPrice}</span>
+                      )}
+                      <span className="text-2xl font-bold text-green-600">{course.price}</span>
+                    </div>
+                  )}
                 </div>
 
                 <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
