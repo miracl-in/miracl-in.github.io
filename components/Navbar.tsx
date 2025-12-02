@@ -6,7 +6,7 @@ import { useState } from "react"
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Courses", href: "/courses" },
+  { name: "Courses", href: "/courses", hasDropdown: true },
   { name: "Projects", href: "/project-support" },
   { name: "R&D", href: "/research" },
   { name: "Team", href: "/team", hidden: true },
@@ -16,8 +16,18 @@ const navLinks = [
   { name: "Contact", href: "/contact" }
 ]
 
+const courses = [
+  { name: "Python Programming", slug: "python-programming" },
+  { name: "DevSecOps", slug: "devsecops" },
+  { name: "Cloud Computing", slug: "cloud-computing" },
+  { name: "DevOps", slug: "devops" },
+  { name: "Blockchain Development", slug: "blockchain-development" },
+  { name: "AI Agents & Agentic AI", slug: "ai-agents" }
+]
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [showCoursesDropdown, setShowCoursesDropdown] = useState(false)
 
   return (
     <header className="sticky top-0 z-20 w-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 md:px-8 py-4 md:py-5 shadow-lg">
@@ -34,13 +44,45 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
           {navLinks.filter(link => !link.hidden).map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-white hover:bg-white/20 hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium transform hover:-translate-y-0.5 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out text-sm md:text-base"
-            >
-              {link.name}
-            </Link>
+            link.hasDropdown ? (
+              <div 
+                key={link.name}
+                className="relative"
+                onMouseEnter={() => setShowCoursesDropdown(true)}
+                onMouseLeave={() => setShowCoursesDropdown(false)}
+              >
+                <Link
+                  href={link.href}
+                  className="px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-white hover:bg-white/20 hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium transform hover:-translate-y-0.5 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out text-sm md:text-base inline-flex items-center gap-1"
+                >
+                  {link.name}
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </Link>
+                {showCoursesDropdown && (
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-30">
+                    {courses.map((course) => (
+                      <Link
+                        key={course.slug}
+                        href={`/courses/${course.slug}`}
+                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                      >
+                        {course.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-white hover:bg-white/20 hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium transform hover:-translate-y-0.5 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out text-sm md:text-base"
+              >
+                {link.name}
+              </Link>
+            )
           ))}
         </nav>
 
@@ -59,14 +101,42 @@ export default function Navbar() {
       {isOpen && (
         <nav className="md:hidden mt-4 pb-4">
           {navLinks.filter(link => !link.hidden).map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="block px-4 py-2 text-white hover:bg-white/20 rounded-lg transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </Link>
+            link.hasDropdown ? (
+              <div key={link.name}>
+                <button
+                  onClick={() => setShowCoursesDropdown(!showCoursesDropdown)}
+                  className="w-full flex items-center justify-between px-4 py-2 text-white hover:bg-white/20 rounded-lg transition-colors"
+                >
+                  {link.name}
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {showCoursesDropdown && (
+                  <div className="pl-4 mt-1">
+                    {courses.map((course) => (
+                      <Link
+                        key={course.slug}
+                        href={`/courses/${course.slug}`}
+                        className="block px-4 py-2 text-white/90 hover:bg-white/20 rounded-lg transition-colors text-sm"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {course.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="block px-4 py-2 text-white hover:bg-white/20 rounded-lg transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
         </nav>
       )}
