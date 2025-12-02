@@ -1,5 +1,19 @@
 import { siteConfig } from '@/app/config'
 
+const upcomingBatches = [
+  { course: "Full Stack AI + DevSecOps + Cloud", startDate: "5th December 2025", slots: 8, mode: "Online/Offline" },
+  { course: "Cloud Computing", startDate: "10th December 2025", slots: 15, mode: "Online/Offline" },
+  { course: "AI Agents & Agentic AI", startDate: "10th December 2025", slots: 10, mode: "Online" },
+  { course: "Linux", startDate: "12th December 2025", slots: 20, mode: "Online/Offline" },
+  { course: "AWS", startDate: "14th December 2025", slots: 15, mode: "Online" },
+  { course: "Python Programming", startDate: "15th December 2025", slots: 15, mode: "Online/Offline" },
+  { course: "Azure", startDate: "16th December 2025", slots: 12, mode: "Online" },
+  { course: "DevOps", startDate: "18th December 2025", slots: 12, mode: "Online" },
+  { course: "DevSecOps", startDate: "20th December 2025", slots: 12, mode: "Online" },
+  { course: "Terraform", startDate: "20th December 2025", slots: 10, mode: "Online" },
+  { course: "Blockchain Development", startDate: "22nd December 2025", slots: 8, mode: "Online" }
+]
+
 const courses = [
   {
     id: 1,
@@ -159,6 +173,60 @@ export default function CoursesPage() {
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Transform your career with our industry-focused courses designed by experts
           </p>
+        </div>
+
+        {/* Training Calendar */}
+        <div className="mb-16 bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-3xl">📅</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Upcoming Training Batches</h2>
+          </div>
+          
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="border-b-2 border-gray-200">
+                  <th className="text-left py-3 px-4 font-semibold text-gray-700">Course</th>
+                  <th className="text-left py-3 px-4 font-semibold text-gray-700">Start Date</th>
+                  <th className="text-left py-3 px-4 font-semibold text-gray-700">Mode</th>
+                  <th className="text-left py-3 px-4 font-semibold text-gray-700">Slots Available</th>
+                  <th className="text-center py-3 px-4 font-semibold text-gray-700">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {upcomingBatches.map((batch, index) => (
+                  <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
+                    <td className="py-4 px-4 font-medium text-gray-900">{batch.course}</td>
+                    <td className="py-4 px-4 text-gray-600">{batch.startDate}</td>
+                    <td className="py-4 px-4">
+                      <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">
+                        {batch.mode}
+                      </span>
+                    </td>
+                    <td className="py-4 px-4">
+                      <span className={`font-semibold ${batch.slots < 5 ? 'text-red-600' : 'text-green-600'}`}>
+                        {batch.slots} seats
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <a
+                        href="/contact"
+                        className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold rounded-lg hover:shadow-lg transition-all transform hover:scale-105"
+                      >
+                        Enroll Now
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+            <p className="text-sm text-blue-800">
+              <strong>Note:</strong> Batches are subject to availability. Contact us for custom batch schedules or corporate training.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
