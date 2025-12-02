@@ -34,6 +34,17 @@ const courses = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [showCoursesDropdown, setShowCoursesDropdown] = useState(false)
+  const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null)
+
+  const handleMouseEnter = () => {
+    if (closeTimeout) clearTimeout(closeTimeout)
+    setShowCoursesDropdown(true)
+  }
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => setShowCoursesDropdown(false), 300)
+    setCloseTimeout(timeout)
+  }
 
   return (
     <header className="sticky top-0 z-20 w-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 md:px-8 py-4 md:py-5 shadow-lg">
@@ -54,8 +65,8 @@ export default function Navbar() {
               <div 
                 key={link.name}
                 className="relative"
-                onMouseEnter={() => setShowCoursesDropdown(true)}
-                onMouseLeave={() => setShowCoursesDropdown(false)}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <Link
                   href={link.href}
