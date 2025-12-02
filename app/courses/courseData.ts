@@ -364,5 +364,101 @@ export const coursesData = {
       { q: "How long is the support?", a: "Ongoing support until you land a job." },
       { q: "Do you guarantee placement?", a: "We provide support and guidance, success depends on your effort." }
     ]
+  },
+  "data-engineering": {
+    name: "Data Engineering",
+    slug: "data-engineering",
+    price: "₹8,000",
+    originalPrice: "₹10,000",
+    duration: "2 months",
+    level: "Intermediate to Advanced",
+    nextBatch: "8th January 2025",
+    description: "Master data engineering with ETL pipelines, data warehousing, and big data technologies. Learn Apache Spark, Airflow, and modern data stack tools.",
+    highlights: [
+      "ETL pipeline development",
+      "Data warehousing concepts",
+      "Apache Spark & Airflow",
+      "Real-time data processing",
+      "Cloud data platforms"
+    ],
+    about: "Comprehensive data engineering course covering data pipelines, warehousing, and big data processing. Build scalable data infrastructure for modern applications.",
+    curriculum: [
+      { module: "Data Engineering Basics", topics: ["ETL Concepts", "Data Modeling", "SQL Advanced", "Data Quality"] },
+      { module: "Big Data Tools", topics: ["Apache Spark", "Apache Airflow", "Kafka", "Data Lakes"] },
+      { module: "Cloud Data Platforms", topics: ["AWS Data Services", "Azure Data Factory", "Snowflake", "BigQuery"] },
+      { module: "Data Pipelines", topics: ["Pipeline Design", "Orchestration", "Monitoring", "Optimization"] },
+      { module: "Projects", topics: ["Real-time Pipeline", "Data Warehouse", "Analytics Platform"] }
+    ],
+    targetAudience: ["Data analysts", "Software engineers", "Database professionals", "Career switchers"],
+    prerequisites: "Basic SQL and Python knowledge",
+    faqs: [
+      { q: "Do I need prior data experience?", a: "Basic SQL and Python knowledge is recommended." },
+      { q: "What tools will I learn?", a: "Spark, Airflow, Kafka, and cloud data platforms." },
+      { q: "Is this suitable for beginners?", a: "Intermediate level - some programming experience needed." }
+    ]
+  },
+  "observability": {
+    name: "Observability (OpenSearch/ELK)",
+    slug: "observability",
+    price: "₹6,000",
+    originalPrice: "₹8,000",
+    duration: "1.5 months",
+    level: "Intermediate",
+    nextBatch: "12th January 2025",
+    description: "Master observability with OpenSearch, ELK Stack, and monitoring tools. Learn log management, metrics, tracing, and system monitoring for production environments.",
+    highlights: [
+      "ELK Stack (Elasticsearch, Logstash, Kibana)",
+      "OpenSearch implementation",
+      "Log aggregation & analysis",
+      "Metrics & monitoring",
+      "Distributed tracing"
+    ],
+    about: "Learn to implement comprehensive observability solutions using OpenSearch and ELK Stack. Monitor, analyze, and troubleshoot production systems effectively.",
+    curriculum: [
+      { module: "Observability Fundamentals", topics: ["Logs, Metrics, Traces", "Monitoring Concepts", "Alerting Strategies"] },
+      { module: "ELK Stack", topics: ["Elasticsearch", "Logstash", "Kibana", "Beats"] },
+      { module: "OpenSearch", topics: ["OpenSearch Setup", "Dashboards", "Security", "Performance"] },
+      { module: "Advanced Topics", topics: ["Distributed Tracing", "APM", "Log Analysis", "Visualization"] },
+      { module: "Projects", topics: ["Production Monitoring", "Log Pipeline", "Custom Dashboards"] }
+    ],
+    targetAudience: ["DevOps engineers", "SREs", "System administrators", "Backend developers"],
+    prerequisites: "Basic Linux and networking knowledge",
+    faqs: [
+      { q: "What's the difference between ELK and OpenSearch?", a: "OpenSearch is an open-source fork of Elasticsearch with similar features." },
+      { q: "Will I learn both ELK and OpenSearch?", a: "Yes, we cover both stacks comprehensively." },
+      { q: "Is this relevant for cloud environments?", a: "Absolutely! Essential for cloud-native applications." }
+    ]
+  },
+  "ethical-hacking": {
+    name: "Ethical Hacking",
+    slug: "ethical-hacking",
+    price: "₹7,000",
+    originalPrice: "₹9,000",
+    duration: "2 months",
+    level: "Intermediate to Advanced",
+    nextBatch: "15th January 2025",
+    description: "Learn ethical hacking and penetration testing. Master vulnerability assessment, network security, web application security, and security tools used by professionals.",
+    highlights: [
+      "Penetration testing techniques",
+      "Network security assessment",
+      "Web application security",
+      "Security tools & frameworks",
+      "Hands-on labs & CTF challenges"
+    ],
+    about: "Comprehensive ethical hacking course covering penetration testing, vulnerability assessment, and security best practices. Learn to think like a hacker to defend better.",
+    curriculum: [
+      { module: "Security Fundamentals", topics: ["Security Concepts", "Threat Landscape", "Attack Vectors", "Defense Strategies"] },
+      { module: "Network Security", topics: ["Network Scanning", "Vulnerability Assessment", "Exploitation", "Post-Exploitation"] },
+      { module: "Web Application Security", topics: ["OWASP Top 10", "SQL Injection", "XSS", "Security Testing"] },
+      { module: "Security Tools", topics: ["Kali Linux", "Metasploit", "Burp Suite", "Nmap", "Wireshark"] },
+      { module: "Practical Labs", topics: ["CTF Challenges", "Real-world Scenarios", "Security Reports"] }
+    ],
+    targetAudience: ["Security enthusiasts", "IT professionals", "Developers", "Network administrators"],
+    prerequisites: "Basic networking and Linux knowledge",
+    faqs: [
+      { q: "Is this legal?", a: "Yes! We teach ethical hacking for defensive purposes only." },
+      { q: "Will I get certified?", a: "You'll receive our certificate and be prepared for CEH/OSCP." },
+      { q: "Do I need security background?", a: "Basic IT knowledge is sufficient to start." }
+    ]
   }
 }
