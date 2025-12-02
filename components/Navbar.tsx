@@ -22,7 +22,13 @@ const courses = [
   { name: "Cloud Computing", slug: "cloud-computing" },
   { name: "DevOps", slug: "devops" },
   { name: "Blockchain Development", slug: "blockchain-development" },
-  { name: "AI Agents & Agentic AI", slug: "ai-agents" }
+  { name: "Linux", slug: "linux" },
+  { name: "Azure", slug: "azure" },
+  { name: "AWS", slug: "aws" },
+  { name: "Terraform", slug: "terraform" },
+  { name: "AI Agents & Agentic AI", slug: "ai-agents" },
+  { name: "Full Stack AI + DevSecOps + Cloud", slug: "full-stack-ai-devsecops-cloud" },
+  { name: "Job Assistance Programme", slug: "job-assistance" }
 ]
 
 export default function Navbar() {
