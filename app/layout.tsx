@@ -5,8 +5,8 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://miracl.in'),
-  title: 'Miraclin Technologies - Best Tech Training Institute in Thanjavur | AI, DevSecOps, Cloud Computing',
-  description: 'Leading technology training institute in Thanjavur offering courses in AI, DevSecOps, Cloud Computing, Python, Blockchain. Expert-led training with job assistance. Enroll now!',
+  title: 'Miraclin Technologies - #1 Tech Training Institute in Thanjavur | AI, DevSecOps, Cloud',
+  description: '⭐ Top-rated tech training in Thanjavur! Learn AI, DevSecOps, Cloud Computing, Python. 100% job assistance + industry certifications. 500+ students placed. Enroll now!',
   keywords: 'tech training Thanjavur, AI course Thanjavur, DevSecOps training, cloud computing course, Python programming, blockchain development, job assistance, technology institute Thanjavur',
   authors: [{ name: 'Miraclin Technologies' }],
   creator: 'Miraclin Technologies',
