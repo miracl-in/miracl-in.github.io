@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Courses", href: "/courses", hasDropdown: true },
   { name: "Projects", href: "/project-support" },
   { name: "R&D", href: "/research" },
+  { name: "Blog", href: "/blog" },
   { name: "Team", href: "/team", hidden: true },
   { name: "About", href: "/about" },
   { name: "Career", href: "/career" },
