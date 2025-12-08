@@ -15,7 +15,6 @@ interface BlogPost {
   tags: string[]
 }
 
-
 export default function BlogClient({ initialBlogs }: { initialBlogs: BlogPost[] }) {
   const searchParams = useSearchParams()
   const router = useRouter()
