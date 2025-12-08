@@ -8,8 +8,14 @@ export const metadata: Metadata = {
   keywords: 'tech blog, AI tutorials, DevSecOps tips, cloud computing guide, career advice, technology trends'
 }
 
-export default async function BlogPage() {
+const POSTS_PER_PAGE = 9
+
+export default async function BlogPage({ searchParams }: { searchParams: { page?: string } }) {
   const blogs = await getAllBlogs()
+  const currentPage = Number(searchParams.page) || 1
+  const totalPages = Math.ceil(blogs.length / POSTS_PER_PAGE)
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE
+  const paginatedBlogs = blogs.slice(startIndex, startIndex + POSTS_PER_PAGE)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -21,8 +27,8 @@ export default async function BlogPage() {
           Expert insights, career guidance, and latest trends in technology from Thanjavur's leading training institute
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogs.map((blog) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {paginatedBlogs.map((blog) => (
             <article key={blog.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
               <div className="p-6">
@@ -50,6 +56,42 @@ export default async function BlogPage() {
             </article>
           ))}
         </div>
+
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center gap-2">
+            {currentPage > 1 && (
+              <Link 
+                href={`/blog?page=${currentPage - 1}`}
+                className="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                Previous
+              </Link>
+            )}
+            
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <Link
+                key={page}
+                href={`/blog?page=${page}`}
+                className={`px-4 py-2 rounded-lg transition-colors ${
+                  page === currentPage
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-white border border-gray-300 hover:bg-gray-50'
+                }`}
+              >
+                {page}
+              </Link>
+            ))}
+            
+            {currentPage < totalPages && (
+              <Link 
+                href={`/blog?page=${currentPage + 1}`}
+                className="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                Next
+              </Link>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )
