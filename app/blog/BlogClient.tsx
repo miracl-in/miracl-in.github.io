@@ -15,15 +15,11 @@ interface BlogPost {
   tags: string[]
 }
 
-interface BlogClientProps {
-  initialBlogs: BlogPost[]
-  currentPage: number
-  totalPages: number
-}
-
-export default function BlogClient({ initialBlogs, currentPage, totalPages }: BlogClientProps) {
+export default function BlogClient({ initialBlogs }: { initialBlogs: BlogPost[] }) {
   const searchParams = useSearchParams()
   const router = useRouter()
+  const currentPage = Number(searchParams.get('page')) || 1
+  const totalPages = Math.ceil(initialBlogs.length / POSTS_PER_PAGE)
 
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE
   const paginatedBlogs = initialBlogs.slice(startIndex, startIndex + POSTS_PER_PAGE)
@@ -58,7 +54,7 @@ export default function BlogClient({ initialBlogs, currentPage, totalPages }: Bl
 
         <main>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {paginatedBlogs.map((blog, index) => (
+            {paginatedBlogs.map((blog) => (
               <article 
                 key={blog.slug} 
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
