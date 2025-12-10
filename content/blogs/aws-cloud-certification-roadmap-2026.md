@@ -1,6 +1,6 @@
 ---
 title: "AWS Cloud Certification Roadmap 2026: Complete Guide to Amazon Web Services"
-date: "2026-12-10"
+date: "2025-12-10"
 author: "Miraclin Technologies"
 excerpt: "Master AWS cloud computing with our comprehensive certification guide. Learn about AWS services, certification paths, and career opportunities in cloud technology."
 image: "/hero-image.jpeg"
