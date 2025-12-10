@@ -1,5 +1,5 @@
 ---
-title: "Full Stack Development Roadmap 2025: Complete Guide for Beginners"
+title: "Full Stack Development Roadmap 2026: Complete Guide for Beginners"
 date: "2025-12-02"
 author: "Miraclin Technologies"
 excerpt: "Master full stack development with our comprehensive roadmap. Learn frontend, backend, databases, and deployment strategies for a successful career."
@@ -7,7 +7,7 @@ image: "/hero-image.jpeg"
 tags: ["Full Stack", "Web Development", "JavaScript", "Career"]
 ---
 
-# Full Stack Development Roadmap 2025: Complete Guide for Beginners
+# Full Stack Development Roadmap 2026: Complete Guide for Beginners
 
 Full stack development is one of the most sought-after skills in the tech industry. Full stack developers can build complete web applications from scratch—handling everything from user interfaces to databases and server logic. This versatility makes them invaluable to startups and enterprises alike.
 
