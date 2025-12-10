@@ -1,17 +1,17 @@
 import { siteConfig } from '@/app/config'
 
 const upcomingBatches = [
-  { course: "Full Stack AI + DevSecOps + Cloud", startDate: "5th December 2025", slots: 8, mode: "Online/Offline" },
-  { course: "Cloud Computing", startDate: "10th December 2025", slots: 15, mode: "Online/Offline" },
-  { course: "AI Agents & Agentic AI", startDate: "10th December 2025", slots: 10, mode: "Online" },
-  { course: "Linux", startDate: "12th December 2025", slots: 20, mode: "Online/Offline" },
-  { course: "AWS", startDate: "14th December 2025", slots: 15, mode: "Online" },
-  { course: "Python Programming", startDate: "15th December 2025", slots: 15, mode: "Online/Offline" },
-  { course: "Azure", startDate: "16th December 2025", slots: 12, mode: "Online" },
-  { course: "DevOps", startDate: "18th December 2025", slots: 12, mode: "Online" },
-  { course: "DevSecOps", startDate: "20th December 2025", slots: 12, mode: "Online" },
-  { course: "Terraform", startDate: "20th December 2025", slots: 10, mode: "Online" },
-  { course: "Blockchain Development", startDate: "22nd December 2025", slots: 8, mode: "Online" },
+  { course: "Full Stack AI + DevSecOps + Cloud", startDate: "11th January 2025", slots: 8, mode: "Online/Offline" },
+  { course: "Python Programming", startDate: "11th January 2025", slots: 15, mode: "Online/Offline" },
+  { course: "DevSecOps", startDate: "13th January 2025", slots: 12, mode: "Online" },
+  { course: "Cloud Computing", startDate: "15th January 2025", slots: 15, mode: "Online/Offline" },
+  { course: "DevOps", startDate: "18th January 2025", slots: 12, mode: "Online" },
+  { course: "Blockchain Development", startDate: "20th January 2025", slots: 8, mode: "Online" },
+  { course: "Linux", startDate: "22nd January 2025", slots: 20, mode: "Online/Offline" },
+  { course: "Azure", startDate: "25th January 2025", slots: 12, mode: "Online" },
+  { course: "AWS", startDate: "27th January 2025", slots: 15, mode: "Online" },
+  { course: "Terraform", startDate: "30th January 2025", slots: 10, mode: "Online" },
+  { course: "AI Agents & Agentic AI", startDate: "1st February 2025", slots: 10, mode: "Online" },
   { course: "Data Engineering", startDate: "8th January 2025", slots: 12, mode: "Online/Offline" },
   { course: "Observability (OpenSearch/ELK)", startDate: "12th January 2025", slots: 10, mode: "Online" },
   { course: "Ethical Hacking", startDate: "15th January 2025", slots: 15, mode: "Online/Offline" }
