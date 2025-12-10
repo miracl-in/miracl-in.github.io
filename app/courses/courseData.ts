@@ -6,7 +6,7 @@ export const coursesData = {
     originalPrice: "₹5,000",
     duration: "2 months",
     level: "Beginner to Advanced",
-    nextBatch: "15th December 2025",
+    nextBatch: "11th January 2025",
     description: "Master Python from basics to advanced. Learn data structures, OOP, file handling, and build real-world applications.",
     highlights: [
       "Hands-on coding exercises",
@@ -38,7 +38,7 @@ export const coursesData = {
     originalPrice: "₹10,000",
     duration: "2 months",
     level: "Intermediate",
-    nextBatch: "20th December 2025",
+    nextBatch: "13th January 2025",
     description: "Learn DevSecOps practices and security integration in CI/CD pipelines. Master automated testing and secure deployment.",
     highlights: [
       "Security automation tools",
@@ -68,7 +68,7 @@ export const coursesData = {
     originalPrice: "₹12,000",
     duration: "3 months",
     level: "Intermediate",
-    nextBatch: "10th December 2025",
+    nextBatch: "15th January 2025",
     description: "Master both Azure and AWS cloud platforms. Learn cloud security, deployment, and multi-cloud infrastructure management.",
     highlights: [
       "Dual cloud certification prep",
@@ -98,7 +98,7 @@ export const coursesData = {
     originalPrice: "₹8,000",
     duration: "2 months",
     level: "Intermediate",
-    nextBatch: "18th December 2025",
+    nextBatch: "18th January 2025",
     description: "Master DevOps practices with Docker, Kubernetes, and CI/CD pipelines. Learn deployment automation and infrastructure management.",
     highlights: [
       "Docker & Kubernetes mastery",
@@ -129,7 +129,7 @@ export const coursesData = {
     originalPrice: "₹7,000",
     duration: "2 months",
     level: "Intermediate to Advanced",
-    nextBatch: "22nd December 2025",
+    nextBatch: "20th January 2025",
     description: "Learn blockchain technology and smart contract development with Solidity. Build DApps, understand cryptocurrency, and master DeFi protocols.",
     highlights: [
       "Blockchain fundamentals",
@@ -159,7 +159,7 @@ export const coursesData = {
     originalPrice: "₹5,000",
     duration: "1 month",
     level: "Beginner to Intermediate",
-    nextBatch: "12th December 2025",
+    nextBatch: "22nd January 2025",
     description: "Master Linux operating system fundamentals. Learn command line, shell scripting, system administration, and server management.",
     highlights: [
       "Command line mastery",
@@ -189,7 +189,7 @@ export const coursesData = {
     originalPrice: "₹6,000",
     duration: "2 months",
     level: "Intermediate",
-    nextBatch: "16th December 2025",
+    nextBatch: "25th January 2025",
     description: "Learn Microsoft Azure cloud platform. Master Azure services, deployment, security, and cloud infrastructure management.",
     highlights: [
       "Azure fundamentals",
@@ -219,7 +219,7 @@ export const coursesData = {
     originalPrice: "₹6,000",
     duration: "2 months",
     level: "Intermediate to Advanced",
-    nextBatch: "14th December 2025",
+    nextBatch: "27th January 2025",
     description: "Master Amazon Web Services cloud platform. Learn AWS services, architecture, security, and cloud infrastructure deployment.",
     highlights: [
       "AWS core services",
@@ -249,7 +249,7 @@ export const coursesData = {
     originalPrice: "₹5,000",
     duration: "1 month",
     level: "Intermediate",
-    nextBatch: "20th December 2025",
+    nextBatch: "30th January 2025",
     description: "Master Infrastructure as Code with Terraform. Learn to automate cloud infrastructure provisioning and management across multiple platforms.",
     highlights: [
       "Infrastructure as Code",
@@ -279,7 +279,7 @@ export const coursesData = {
     originalPrice: "₹12,000",
     duration: "2 months",
     level: "Intermediate to Advanced",
-    nextBatch: "10th December 2025",
+    nextBatch: "1st February 2025",
     description: "Learn to build intelligent AI agents and agentic systems. Master LLMs, autonomous agents, and AI-powered automation for real-world applications.",
     highlights: [
       "LLM integration",
@@ -309,7 +309,7 @@ export const coursesData = {
     originalPrice: "₹25,000",
     duration: "5 months",
     level: "Beginner to Advanced",
-    nextBatch: "5th December 2025",
+    nextBatch: "11th January 2025",
     description: "Comprehensive 5-month program covering AI development, full-stack applications, DevSecOps practices, and cloud infrastructure. Build intelligent, secure, scalable applications from development to production.",
     highlights: [
       "Complete full-stack development",
