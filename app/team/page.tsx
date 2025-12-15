@@ -4,7 +4,7 @@ const teamMembers = [
     name: "Aldrin Wilfred A",
     role: "Senior Consultant",
     bio: "Experienced Consultant (from fsociety.in) specializing in DevSecOps and Application Security. Provides personalized guidance and mentorship to students.",
-    expertise: ["Jenkins", "Security+", "DevOps", "DevSecOps", "Python", "JavaScript", "Linux", "AI"],
+    expertise: ["Security+", "DevOps", "DevSecOps", "Jenkins", "Python", "JavaScript", "Linux", "AWS", "Azure", "Deep learning"],
     experience: "7+ years",
     education: "M.S (Europe) - Telecommunications",
     image: "AW"
@@ -14,7 +14,7 @@ const teamMembers = [
     name: "Jossina Vijita A",
     role: "Senior Consultant",
     bio: "Expert Consultant with strong background in Python programming languages. Focuses on practical testing skills and problem-solving.",
-    expertise: ["Python", "Automation", "Software Testing", "Data Science", "C++", "Problem Solving", "Agentic AI"],
+    expertise: ["Python", "Automation", "Software Testing", "Data Science", "C++", "Problem Solving", "Agentic AI", "Artificial Intelligence"],
     experience: "4+ years",
     education: "M.Sc - Information Technology",
     image: "JV"
