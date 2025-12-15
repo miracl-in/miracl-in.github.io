@@ -14,7 +14,7 @@ const teamMembers = [
     name: "Jossina Vijita A",
     role: "Senior Consultant",
     bio: "Expert Consultant with strong background in Python programming languages. Focuses on practical testing skills and problem-solving.",
-    expertise: ["Python", "Automation", "Software Testing", "Data Science", "C++", "Problem Solving"],
+    expertise: ["Python", "Automation", "Software Testing", "Data Science", "C++", "Problem Solving", "Agentic AI"],
     experience: "4+ years",
     education: "M.Sc - Information Technology",
     image: "JV"
