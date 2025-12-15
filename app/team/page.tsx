@@ -1,63 +1,23 @@
 const teamMembers = [
   {
-    id: 1,
-    name: "Sarah Johnson",
-    role: "Lead Full Stack Instructor",
-    bio: "Former Senior Developer at Google with 8+ years of experience in web development. Specializes in React, Node.js, and modern JavaScript frameworks.",
-    expertise: ["React & Next.js", "Node.js", "JavaScript", "Web Development"],
-    experience: "8+ years",
-    education: "MS Computer Science, Stanford University",
-    image: "SJ"
-  },
-  {
-    id: 2,
-    name: "Dr. Michael Chen",
-    role: "Data Science Lead",
-    bio: "PhD in Machine Learning from MIT. Former Data Scientist at Netflix and Amazon. Expert in Python, ML algorithms, and statistical analysis.",
-    expertise: ["Machine Learning", "Python", "Data Analysis", "Statistics"],
-    experience: "10+ years",
-    education: "PhD Machine Learning, MIT",
-    image: "MC"
-  },
-  {
-    id: 3,
-    name: "Emily Rodriguez",
-    role: "Cloud Architecture Instructor",
-    bio: "AWS Certified Solutions Architect with extensive experience in cloud infrastructure. Former Cloud Engineer at Microsoft Azure team.",
-    expertise: ["AWS", "Cloud Architecture", "DevOps", "Infrastructure"],
+    id: 7,
+    name: "Aldrin Wilfred A",
+    role: "Senior Consultant",
+    bio: "Experienced Consultant (from fsociety.in) specializing in DevSecOps and Application Security. Provides personalized guidance and mentorship to students.",
+    expertise: ["Jenkins", "Security+", "DevOps", "DevSecOps", "Python", "JavaScript", "Linux", "AI"],
     experience: "7+ years",
-    education: "BS Computer Engineering, UC Berkeley",
-    image: "ER"
+    education: "M.S (Europe) - Telecommunications",
+    image: "AW"
   },
   {
-    id: 4,
-    name: "James Wilson",
-    role: "Mobile Development Expert",
-    bio: "Senior Mobile Developer with experience at Uber and Airbnb. Specializes in React Native and cross-platform mobile development.",
-    expertise: ["React Native", "iOS", "Android", "Mobile Development"],
-    experience: "6+ years",
-    education: "BS Software Engineering, Carnegie Mellon",
-    image: "JW"
-  },
-  {
-    id: 5,
-    name: "Alex Thompson",
-    role: "Cybersecurity Specialist",
-    bio: "Certified Ethical Hacker (CEH) and CISSP. Former Security Consultant for Fortune 500 companies. Expert in penetration testing and security audits.",
-    expertise: ["Ethical Hacking", "Network Security", "Compliance", "Risk Assessment"],
-    experience: "9+ years",
-    education: "MS Cybersecurity, Georgia Tech",
-    image: "AT"
-  },
-  {
-    id: 6,
-    name: "David Kumar",
-    role: "DevOps Engineering Lead",
-    bio: "DevOps Engineer with experience at Netflix and Spotify. Expert in containerization, CI/CD pipelines, and infrastructure automation.",
-    expertise: ["Docker", "Kubernetes", "CI/CD", "Infrastructure as Code"],
-    experience: "8+ years",
-    education: "BS Computer Science, IIT Delhi",
-    image: "DK"
+    id: 8,
+    name: "Jossina Vijita A",
+    role: "Senior Consultant",
+    bio: "Expert Consultant with strong background in Python programming languages. Focuses on practical testing skills and problem-solving.",
+    expertise: ["Python", "Automation", "Software Testing", "Data Science", "C++", "Problem Solving"],
+    experience: "4+ years",
+    education: "M.Sc - Information Technology",
+    image: "JV"
   }
 ]
 
@@ -124,20 +84,7 @@ export default function TeamPage() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
-          <div className="text-center p-6 bg-white rounded-xl shadow-md">
-            <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-            <div className="text-gray-600">Years Combined Experience</div>
-          </div>
-          <div className="text-center p-6 bg-white rounded-xl shadow-md">
-            <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
-            <div className="text-gray-600">Students Trained</div>
-          </div>
-          <div className="text-center p-6 bg-white rounded-xl shadow-md">
-            <div className="text-3xl font-bold text-blue-600 mb-2">95%</div>
-            <div className="text-gray-600">Success Rate</div>
-          </div>
-        </div>
+
 
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 md:p-8 text-white">
