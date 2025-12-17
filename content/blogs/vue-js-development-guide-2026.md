@@ -1,6 +1,6 @@
 ---
 title: "Vue.js Development Guide 2026: Progressive Frontend Framework"
-date: "2026-12-16"
+date: "2025-12-16"
 author: "Miraclin Technologies"
 excerpt: "Master Vue.js development in 2026. Learn composition API, state management with Pinia, and modern Vue.js features for building reactive web applications."
 image: "/hero-image.jpeg"
