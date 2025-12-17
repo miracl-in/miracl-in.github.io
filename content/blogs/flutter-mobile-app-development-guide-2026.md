@@ -1,6 +1,6 @@
 ---
 title: "Flutter Mobile App Development Guide 2026: Cross-Platform Excellence"
-date: "2026-12-16"
+date: "2025-12-16"
 author: "Miraclin Technologies"
 excerpt: "Master Flutter mobile app development in 2026. Learn cross-platform development, Dart programming, state management, and deployment strategies for iOS and Android."
 image: "/hero-image.jpeg"
