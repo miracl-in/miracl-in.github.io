@@ -1,6 +1,6 @@
 ---
 title: "Angular Frontend Development Guide 2026: Enterprise Web Applications"
-date: "2026-12-16"
+date: "2025-12-16"
 author: "Miraclin Technologies"
 excerpt: "Master Angular development for enterprise applications in 2026. Learn TypeScript, component architecture, state management, and modern Angular features."
 image: "/hero-image.jpeg"
