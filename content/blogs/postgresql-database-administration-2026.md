@@ -1,6 +1,6 @@
 ---
 title: "PostgreSQL Database Administration Guide 2026: Advanced Database Management"
-date: "2026-12-16"
+date: "2025-12-16"
 author: "Miraclin Technologies"
 excerpt: "Master PostgreSQL database administration in 2026. Learn advanced SQL, performance tuning, backup strategies, and enterprise database management."
 image: "/hero-image.jpeg"
