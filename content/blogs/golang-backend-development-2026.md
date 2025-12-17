@@ -1,6 +1,6 @@
 ---
 title: "Go (Golang) Backend Development Guide 2026: High-Performance Server Programming"
-date: "2026-12-16"
+date: "2025-12-16"
 author: "Miraclin Technologies"
 excerpt: "Master Go programming for backend development in 2026. Learn concurrent programming, microservices, and cloud-native applications with Golang."
 image: "/hero-image.jpeg"
