@@ -57,6 +57,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog pages with higher priority for recent posts
   const blogSlugs = getAllBlogSlugs()
   const recentBlogPosts = [
+    'microservices-architecture-guide-2026',
+    'typescript-advanced-development-2026',
+    'graphql-api-development-2026',
+    'redis-caching-strategies-2026',
+    'mongodb-database-design-2026',
+    'docker-containerization-guide-2026',
+    'rest-api-design-2026',
+    'git-version-control-mastery-2026',
+    'elasticsearch-search-engine-2026',
+    'apache-kafka-streaming-2026',
+    'terraform-infrastructure-as-code-2026',
     'nodejs-backend-development-guide-2026',
     'flutter-mobile-app-development-guide-2026',
     'golang-backend-development-2026',
