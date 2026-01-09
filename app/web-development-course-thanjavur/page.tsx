@@ -65,8 +65,8 @@ export default function WebDevelopmentCourseThanjavur() {
                 <span>4 months</span>
               </div>
               <div className="flex justify-between">
-                <span className="font-semibold">Fee:</span>
-                <span className="text-2xl font-bold text-blue-600">₹6,000</span>
+                <span className="font-semibold">Mode:</span>
+                <span className="text-2xl font-bold text-blue-600">Online/Offline</span>
               </div>
               <div className="flex justify-between">
                 <span className="font-semibold">Level:</span>
