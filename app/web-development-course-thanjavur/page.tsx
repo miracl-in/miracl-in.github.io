@@ -73,10 +73,6 @@ export default function WebDevelopmentCourseThanjavur() {
                 <span>Beginner to Advanced</span>
               </div>
               <div className="flex justify-between">
-                <span className="font-semibold">Next Batch:</span>
-                <span>15th January 2025</span>
-              </div>
-              <div className="flex justify-between">
                 <span className="font-semibold">Class Mode:</span>
                 <span>Offline + Online</span>
               </div>
