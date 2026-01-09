@@ -69,8 +69,8 @@ export default function DataScienceTrainingThanjavur() {
                 <span>5 months</span>
               </div>
               <div className="flex justify-between">
-                <span className="font-semibold">Fee:</span>
-                <span className="text-2xl font-bold text-blue-600">₹8,000</span>
+                <span className="font-semibold">Mode:</span>
+                <span className="text-2xl font-bold text-blue-600">Online/Offline</span>
               </div>
               <div className="flex justify-between">
                 <span className="font-semibold">Prerequisites:</span>
