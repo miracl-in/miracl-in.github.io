@@ -72,8 +72,8 @@ export default function FAQPage() {
           a: "We accept all major payment methods including credit/debit cards, UPI, net banking, and EMI options through our secure payment gateway."
         },
         {
-          q: "Do you offer EMI options?",
-          a: "Yes, we offer flexible EMI options starting from ₹1,000 per month for most courses. No additional processing fees."
+          q: "Do you offer flexible payment options?",
+          a: "Yes, we offer flexible payment options for most courses. Contact us to discuss payment plans that work for you."
         },
         {
           q: "What is your refund policy?",
@@ -81,7 +81,7 @@ export default function FAQPage() {
         },
         {
           q: "Are there any hidden charges?",
-          a: "No hidden charges. The course fee includes all materials, projects, certificates, and placement assistance. What you see is what you pay."
+          a: "No hidden charges. All course materials, projects, certificates, and placement assistance are included. What you see is what you get."
         }
       ]
     }
