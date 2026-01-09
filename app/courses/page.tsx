@@ -1,20 +1,20 @@
 import { siteConfig } from '@/app/config'
 
 const upcomingBatches = [
-  { course: "Full Stack AI + DevSecOps + Cloud", startDate: "11th January 2025", slots: 8, mode: "Online/Offline" },
-  { course: "Python Programming", startDate: "11th January 2025", slots: 15, mode: "Online/Offline" },
-  { course: "DevSecOps", startDate: "13th January 2025", slots: 12, mode: "Online" },
-  { course: "Cloud Computing", startDate: "15th January 2025", slots: 15, mode: "Online/Offline" },
-  { course: "DevOps", startDate: "18th January 2025", slots: 12, mode: "Online" },
-  { course: "Blockchain Development", startDate: "20th January 2025", slots: 8, mode: "Online" },
-  { course: "Linux", startDate: "22nd January 2025", slots: 20, mode: "Online/Offline" },
-  { course: "Azure", startDate: "25th January 2025", slots: 12, mode: "Online" },
-  { course: "AWS", startDate: "27th January 2025", slots: 15, mode: "Online" },
-  { course: "Terraform", startDate: "30th January 2025", slots: 10, mode: "Online" },
-  { course: "AI Agents & Agentic AI", startDate: "1st February 2025", slots: 10, mode: "Online" },
-  { course: "Data Engineering", startDate: "8th January 2025", slots: 12, mode: "Online/Offline" },
-  { course: "Observability (OpenSearch/ELK)", startDate: "12th January 2025", slots: 10, mode: "Online" },
-  { course: "Ethical Hacking", startDate: "15th January 2025", slots: 15, mode: "Online/Offline" }
+  { course: "Full Stack AI + DevSecOps + Cloud", slots: 8, mode: "Online/Offline" },
+  { course: "Python Programming", slots: 15, mode: "Online/Offline" },
+  { course: "DevSecOps", slots: 12, mode: "Online" },
+  { course: "Cloud Computing", slots: 15, mode: "Online/Offline" },
+  { course: "DevOps", slots: 12, mode: "Online" },
+  { course: "Blockchain Development", slots: 8, mode: "Online" },
+  { course: "Linux", slots: 20, mode: "Online/Offline" },
+  { course: "Azure", slots: 12, mode: "Online" },
+  { course: "AWS", slots: 15, mode: "Online" },
+  { course: "Terraform", slots: 10, mode: "Online" },
+  { course: "AI Agents & Agentic AI", slots: 10, mode: "Online" },
+  { course: "Data Engineering", slots: 12, mode: "Online/Offline" },
+  { course: "Observability (OpenSearch/ELK)", slots: 10, mode: "Online" },
+  { course: "Ethical Hacking", slots: 15, mode: "Online/Offline" }
 ]
 
 const courses = [
@@ -226,7 +226,6 @@ export default function CoursesPage() {
               <thead>
                 <tr className="border-b-2 border-gray-200">
                   <th className="text-left py-3 px-4 font-semibold text-gray-700">Course</th>
-                  <th className="text-left py-3 px-4 font-semibold text-gray-700">Start Date</th>
                   <th className="text-left py-3 px-4 font-semibold text-gray-700">Mode</th>
                   <th className="text-left py-3 px-4 font-semibold text-gray-700">Slots Available</th>
                   <th className="text-center py-3 px-4 font-semibold text-gray-700">Action</th>
@@ -243,7 +242,6 @@ export default function CoursesPage() {
                         </span>
                       )}
                     </td>
-                    <td className="py-4 px-4 text-gray-600">{batch.startDate}</td>
                     <td className="py-4 px-4">
                       <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">
                         {batch.mode}
