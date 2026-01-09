@@ -45,8 +45,8 @@ export default function AITrainingThanjavurPage() {
             <p className="text-2xl text-blue-600">2 Months</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow">
-            <h3 className="font-bold mb-2">Fee</h3>
-            <p className="text-2xl text-green-600">₹10,000</p>
+            <h3 className="font-bold mb-2">Mode</h3>
+            <p className="text-2xl text-green-600">Online/Offline</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow">
             <h3 className="font-bold mb-2">Batch Size</h3>
