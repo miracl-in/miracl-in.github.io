@@ -46,10 +46,6 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
               <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-lg font-semibold">{course.price}</span>
             )}
           </div>
-
-          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
-            <p className="text-yellow-800"><strong>Next Batch Starts:</strong> {course.nextBatch}</p>
-          </div>
         </div>
 
         {/* Program Highlights */}
