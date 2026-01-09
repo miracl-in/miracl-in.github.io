@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Best Tech Training Institute in Thanjavur | AI, DevSecOps, Cloud Computing - Miraclin Technologies',
-  description: 'Top-rated technology training institute in Thanjavur offering AI, DevSecOps, Cloud Computing courses. 95% placement rate. Located near Infant Jesus Church, Pudukottai Road.',
+  description: 'Top-rated technology training institute in Thanjavur offering AI, DevSecOps, Cloud Computing courses. 98% Job-Success rate. Located near Infant Jesus Church, Pudukottai Road.',
   keywords: 'tech training Thanjavur, AI course Thanjavur, DevSecOps training Thanjavur, cloud computing Thanjavur, Python programming Thanjavur, best IT institute Thanjavur'
 }
 
@@ -20,7 +20,7 @@ export default function ThanjavurPage() {
             <ul className="space-y-3 text-gray-600">
               <li>✅ Located in prime location near Infant Jesus Church</li>
               <li>✅ Easy access from Pudukottai Road</li>
-              <li>✅ 500+ students trained from Thanjavur district</li>
+              <li>✅ 50+ students trained from Thanjavur district</li>
               <li>✅ Industry expert instructors from Chennai & Bangalore</li>
               <li>✅ Job placement assistance with top companies</li>
             </ul>
@@ -30,13 +30,13 @@ export default function ThanjavurPage() {
             <h3 className="text-xl font-bold mb-4">Popular Courses in Thanjavur</h3>
             <div className="space-y-2">
               <div className="p-3 bg-white rounded-lg shadow">
-                <strong>AI & Machine Learning</strong> - ₹10,000
+                <strong>AI & Machine Learning</strong>
               </div>
               <div className="p-3 bg-white rounded-lg shadow">
-                <strong>DevSecOps Training</strong> - ₹8,000
+                <strong>DevSecOps Training</strong>
               </div>
               <div className="p-3 bg-white rounded-lg shadow">
-                <strong>Cloud Computing (AWS + Azure)</strong> - ₹10,000
+                <strong>Cloud Computing (AWS + Azure)</strong>
               </div>
             </div>
           </div>
