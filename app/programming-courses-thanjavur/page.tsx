@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 
 export default function ProgrammingCoursesThanjavur() {
   const courses = [
-    { name: 'Python Programming', duration: '2 months', price: '₹3,000', level: 'Beginner to Advanced' },
-    { name: 'Java Development', duration: '3 months', price: '₹4,000', level: 'Beginner to Advanced' },
-    { name: 'JavaScript & React', duration: '2.5 months', price: '₹3,500', level: 'Intermediate' },
-    { name: 'C++ Programming', duration: '2 months', price: '₹2,500', level: 'Beginner' }
+    { name: 'Python Programming', duration: '2 months', level: 'Beginner to Advanced' },
+    { name: 'Java Development', duration: '3 months', level: 'Beginner to Advanced' },
+    { name: 'JavaScript & React', duration: '2.5 months', level: 'Intermediate' },
+    { name: 'C++ Programming', duration: '2 months', level: 'Beginner' }
   ]
 
   return (
@@ -38,7 +38,6 @@ export default function ProgrammingCoursesThanjavur() {
               <div className="space-y-2 text-sm text-gray-600 mb-4">
                 <p>Duration: {course.duration}</p>
                 <p>Level: {course.level}</p>
-                <p className="text-2xl font-bold text-blue-600">{course.price}</p>
               </div>
               <a href="/contact" className="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
                 Enroll Now
