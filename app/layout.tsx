@@ -54,7 +54,11 @@ export default function RootLayout({
         <meta name="geo.placename" content="Thanjavur" />
         <meta name="geo.position" content="10.7905;79.1378" />
         <meta name="ICBM" content="10.7905, 79.1378" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1999706408810094" crossorigin="anonymous"></script>
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1999706408810094"
+          crossOrigin="anonymous"
+        ></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -72,7 +76,7 @@ export default function RootLayout({
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+91-6381612228",
+                "telephone": "+91-9543813232",
                 "email": "miraclintech@gmail.com"
               }
             })
