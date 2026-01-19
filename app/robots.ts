@@ -4,7 +4,7 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
-      allow: '/',
+      //allow: '/',
       disallow: ['/api/', '/_next/']
     },
     sitemap: 'https://miracl.in/sitemap.xml',
