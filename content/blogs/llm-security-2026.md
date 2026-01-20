@@ -1,6 +1,6 @@
 ---
 title: "LLM Security in 2026: Protecting Large Language Models in the Age of Autonomous AI"
-date: "2026-01-14"
+date: "2026-01-20"
 author: "Miraclin Technologies"
 excerpt: "A 2026-focused guide to LLM security covering threats, defenses, architecture patterns, and best practices for securing AI-powered systems."
 image: "/hero-image.jpeg"
