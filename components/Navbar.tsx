@@ -59,7 +59,7 @@ export default function Navbar() {
             alt="Miraclin Technologies" 
             className="w-10 h-10 rounded-lg object-cover"
           />
-          <span className="text-white font-bold text-lg md:text-xl hidden sm:block">Miraclin Technologies</span>
+          <span className="text-white font-bold text-lg md:text-xl">Miraclin Technologies</span>
         </Link>
 
         {/* Desktop Navigation */}
