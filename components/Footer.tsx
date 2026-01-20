@@ -17,17 +17,25 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  useEffect(() => {
+    try {
+      // @ts-ignore
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (err) {
+      console.error('AdSense error:', err);
+    }
+  }, []);
+
   return (
     <>
       {/* AdSense - Above Footer */}
-      <div className="max-w-7xl mx-auto px-4 py-6">
+      <div className="max-w-7xl mx-auto px-4">
         <ins className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-1999706408810094"
           data-ad-slot="4965524167"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
-        <script dangerouslySetInnerHTML={{ __html: '(adsbygoogle = window.adsbygoogle || []).push({});' }} />
       </div>
 
       <footer className="bg-gray-900 text-white py-12">
