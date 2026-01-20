@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   creator: 'Miraclin Technologies',
   publisher: 'Miraclin Technologies',
   robots: 'index, follow',
+  referrer: 'strict-origin-when-cross-origin',
+  other: {
+    'X-Content-Type-Options': 'nosniff'
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
