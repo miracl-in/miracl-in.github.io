@@ -12,7 +12,7 @@ export default function PrivacyPage() {
             Your privacy and trust are important to us. Learn how we protect your data and our terms of service.
           </p>
           <p className="text-sm text-gray-500 mt-4">
-            Last updated: January 2024
+            Last updated: January 2026
           </p>
         </div>
 
@@ -121,6 +121,11 @@ export default function PrivacyPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Third-Party Services</h3>
                 <p>We use trusted third-party services for payments, analytics, and communication. These partners are bound by strict data protection agreements.</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Advertising</h3>
+                <p>We use Google AdSense to display advertisements on our website. Google may use cookies and web beacons to collect information about your visits to this and other websites to provide relevant advertisements. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Google Ads Settings</a>.</p>
               </div>
             </div>
           </div>
