@@ -71,6 +71,7 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-4">Legal</h3>
               <ul className="space-y-2">
                 <li><a href="/privacy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="/cookies" className="text-gray-300 hover:text-white transition-colors">Cookie Policy</a></li>
                 <li><a href="/privacy#terms-of-service" className="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
                 <li><a href="/privacy#refund-policy" className="text-gray-300 hover:text-white transition-colors">Refund Policy</a></li>
               </ul>
