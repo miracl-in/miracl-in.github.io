@@ -3,7 +3,7 @@ title: "Quantum Computing Programming Guide 2026: Enter the Quantum Era"
 date: "2026-01-05"
 author: "Miraclin Technologies"
 excerpt: "Complete guide to quantum computing programming in 2026. Learn quantum algorithms, programming languages, and career opportunities in quantum technology."
-image: "/hero-image.jpeg"
+image: "/quantum-computing-programming-guide-2026.png"
 tags: ["Quantum Computing", "Quantum Programming", "Qiskit", "Quantum Algorithms", "Future Technology"]
 ---
 
