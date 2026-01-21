@@ -3,7 +3,7 @@ title: "Getting Started with Python Programming"
 date: "2025-12-01"
 author: "Miraclin Technologies"
 excerpt: "Learn the fundamentals of Python programming and why it's the perfect language for beginners."
-image: "/hero-image.jpeg"
+image: "/getting-started-with-python-2026.png"
 tags: ["Python", "Programming", "Beginners"]
 ---
 
