@@ -3,7 +3,7 @@ title: "AI and Machine Learning Career Guide 2026: Skills, Salaries, and Opportu
 date: "2025-12-04"
 author: "Miraclin Technologies"
 excerpt: "Comprehensive guide to building a successful career in AI and Machine Learning. Learn about required skills, career paths, and salary expectations in India."
-image: "/hero-image.jpeg"
+image: "/ai-machine-learning-career-2026.png"
 tags: ["AI", "Machine Learning", "Career", "Data Science"]
 ---
 
