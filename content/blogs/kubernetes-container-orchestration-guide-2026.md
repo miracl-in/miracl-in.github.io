@@ -3,7 +3,7 @@ title: "Kubernetes Container Orchestration Guide 2026: Master DevOps Automation"
 date: "2025-12-10"
 author: "Miraclin Technologies"
 excerpt: "Complete Kubernetes guide for DevOps professionals. Learn container orchestration, deployment strategies, and best practices for scalable applications in 2026."
-image: "/hero-image.jpeg"
+image: "/kubernetes-container-orchestration-guide-2026.png"
 tags: ["Kubernetes", "DevOps", "Container Orchestration", "Cloud Computing", "Docker"]
 ---
 
