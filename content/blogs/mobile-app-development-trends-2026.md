@@ -3,7 +3,7 @@ title: "Mobile App Development Trends and Technologies for 2026"
 date: "2025-12-08"
 author: "Miraclin Technologies"
 excerpt: "Explore the latest mobile app development trends, technologies, and frameworks shaping the industry in 2026. Complete guide for developers."
-image: "/hero-image.jpeg"
+image: "/mobile-app-development-trends-2026.png"
 tags: ["Mobile Development", "React Native", "Flutter", "iOS", "Android", "2026"]
 keywords: "mobile app development, react native, flutter, ios development, android development, cross-platform, mobile trends 2026"
 metaDescription: "Discover mobile app development trends for 2026. Learn about React Native, Flutter, and emerging technologies shaping the mobile development landscape."
