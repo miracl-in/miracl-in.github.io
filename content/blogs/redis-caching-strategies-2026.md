@@ -3,7 +3,7 @@ title: "Redis Caching Strategies 2026: High-Performance Data Storage"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master Redis caching strategies for 2026. Learn data structures, performance optimization, clustering, and real-world implementation patterns."
-image: "/hero-image.jpeg"
+image: "/redis-caching-strategies-2026.png"
 tags: ["Redis", "Caching", "Performance", "NoSQL", "Database"]
 ---
 
