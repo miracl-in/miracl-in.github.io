@@ -3,7 +3,7 @@ title: "TypeScript Advanced Development 2026: Type-Safe JavaScript at Scale"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master advanced TypeScript development in 2026. Learn advanced types, generics, decorators, and enterprise patterns for building type-safe scalable applications."
-image: "/hero-image.jpeg"
+image: "/typescript-advanced-development-2026.png"
 tags: ["TypeScript", "JavaScript", "Advanced Types", "Generics", "Enterprise Development"]
 ---
 
