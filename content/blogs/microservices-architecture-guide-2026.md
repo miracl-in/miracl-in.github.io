@@ -3,7 +3,7 @@ title: "Microservices Architecture Guide 2026: Building Scalable Distributed Sys
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master microservices architecture in 2026. Learn design patterns, containerization, service mesh, API gateways, and best practices for building scalable distributed systems."
-image: "/hero-image.jpeg"
+image: "/microservices-architecture-guide-2026.png"
 tags: ["Microservices", "Architecture", "Distributed Systems", "Docker", "Kubernetes", "API Gateway"]
 ---
 
