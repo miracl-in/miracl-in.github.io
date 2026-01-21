@@ -3,7 +3,7 @@ title: "GraphQL API Development 2026: Modern Data Fetching and Schema Design"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master GraphQL API development in 2026. Learn schema design, resolvers, subscriptions, federation, and performance optimization for scalable GraphQL APIs."
-image: "/hero-image.jpeg"
+image: "/graphql-api-development-2026.png"
 tags: ["GraphQL", "API Development", "Schema Design", "Apollo", "Federation", "Performance"]
 ---
 
