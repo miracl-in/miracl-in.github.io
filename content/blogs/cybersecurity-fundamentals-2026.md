@@ -3,7 +3,7 @@ title: "Cybersecurity Fundamentals: Essential Skills for 2026"
 date: "2025-12-08"
 author: "Miraclin Technologies"
 excerpt: "Master the essential cybersecurity skills needed to protect digital assets and build a successful career in information security."
-image: "/hero-image.jpeg"
+image: "/cybersecurity-fundamentals-2026.png"
 tags: ["Cybersecurity", "Information Security", "Career", "2026"]
 keywords: "cybersecurity fundamentals, information security, cyber threats, security career, ethical hacking, network security"
 metaDescription: "Learn cybersecurity fundamentals and essential skills for 2026. Complete guide to information security, threat protection, and building a cybersecurity career."
