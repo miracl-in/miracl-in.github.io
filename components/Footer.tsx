@@ -74,7 +74,8 @@ export default function Footer() {
               </p>
 
               <p className="text-gray-300 text-sm mb-4 leading-relaxed">
-                📍 Miraclin Technologies<br />
+                📍 <strong>Corporate Operations & Training Center</strong><br />
+                Miraclin Technologies<br />
                 No. 35 &amp; 36, 1st Floor<br />
                 Infant Jesus Commercial Complex<br />
                 Near Infant Jesus Church, Pudukottai Road<br />
