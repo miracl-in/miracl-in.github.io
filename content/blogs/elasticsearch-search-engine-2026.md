@@ -3,7 +3,7 @@ title: "Elasticsearch Search Engine 2026: Full-Text Search and Analytics"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master Elasticsearch for 2026. Learn indexing, querying, aggregations, performance optimization, and building scalable search solutions."
-image: "/hero-image.jpeg"
+image: "/elasticsearch-search-engine-2026.png"
 tags: ["Elasticsearch", "Search Engine", "Analytics", "Full-Text Search", "ELK Stack"]
 ---
 
