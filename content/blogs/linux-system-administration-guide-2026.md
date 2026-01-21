@@ -3,7 +3,7 @@ title: "Linux System Administration Guide 2026: Master Server Management and Dev
 date: "2025-12-10"
 author: "Miraclin Technologies"
 excerpt: "Complete Linux system administration guide for 2026. Learn server management, security, automation, and DevOps practices for enterprise environments."
-image: "/hero-image.jpeg"
+image: "/linux-system-administration-guide-2026.png"
 tags: ["Linux", "System Administration", "DevOps", "Server Management", "Open Source"]
 ---
 
