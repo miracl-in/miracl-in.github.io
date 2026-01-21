@@ -3,7 +3,7 @@ title: "Apache Kafka Streaming 2026: Real-Time Data Processing"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master Apache Kafka for real-time data streaming in 2026. Learn producers, consumers, stream processing, and building scalable event-driven architectures."
-image: "/hero-image.jpeg"
+image: "/apache-kafka-streaming-2026.png"
 tags: ["Apache Kafka", "Streaming", "Real-Time", "Event-Driven", "Data Processing"]
 ---
 
