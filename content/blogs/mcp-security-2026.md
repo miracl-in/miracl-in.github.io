@@ -3,7 +3,7 @@ title: "MCP Security in 2026: Protecting Model Context Protocols at the Edge and
 date: "2026-01-20"
 author: "Miraclin Technologies"
 excerpt: "A comprehensive 2026 guide to MCP security. Learn how to secure Model Context Protocols across edge, cloud, and AI agent ecosystems."
-image: "/hero-image.jpeg"
+image: "/mcp-security-2026.png"
 tags: ["MCP Security", "AI Agents", "Edge Computing", "Zero Trust", "DevSecOps"]
 ---
 
