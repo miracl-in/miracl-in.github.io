@@ -3,7 +3,7 @@ title: "Git Version Control Mastery 2026: Advanced Workflows and Collaboration"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master Git version control in 2026. Learn advanced branching strategies, merge conflicts resolution, CI/CD integration, and team collaboration workflows."
-image: "/hero-image.jpeg"
+image: "/git-version-control-mastery-2026.png"
 tags: ["Git", "Version Control", "DevOps", "Collaboration", "Branching"]
 ---
 
