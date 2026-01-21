@@ -3,7 +3,7 @@ title: "Terraform Infrastructure as Code 2026: Cloud Automation Mastery"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master Terraform for infrastructure automation in 2026. Learn modules, state management, multi-cloud deployments, and DevOps best practices."
-image: "/hero-image.jpeg"
+image: "/terraform-infrastructure-as-code-2026.png"
 tags: ["Terraform", "Infrastructure as Code", "DevOps", "Cloud", "Automation"]
 ---
 
