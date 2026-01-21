@@ -82,12 +82,10 @@ export default function Footer() {
                 Thanjavur - 613005
               </p>
 
-              <a
-                href="mailto:miraclintech@gmail.com"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                📧 miraclintech@gmail.com
-              </a>
+              <p className="text-gray-300 text-sm">
+                📧 <a href="mailto:miraclintech@gmail.com" className="hover:text-white">miraclintech@gmail.com</a><br />
+                📞 <a href="tel:+919543813232" className="hover:text-white">+91 95438 13232</a>
+              </p>
             </div>
 
             {/* Quick Links */}
