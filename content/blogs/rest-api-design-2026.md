@@ -3,7 +3,7 @@ title: "REST API Design 2026: Building Scalable Web Services"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master REST API design principles for 2026. Learn HTTP methods, status codes, authentication, versioning, and performance optimization for scalable web services."
-image: "/hero-image.jpeg"
+image: "/rest-api-design-2026.png"
 tags: ["REST API", "Web Services", "HTTP", "Authentication", "API Design"]
 ---
 
