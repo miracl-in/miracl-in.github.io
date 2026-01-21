@@ -3,7 +3,7 @@ title: "Zero Trust Security 2026: The New Reality"
 date: "2026-01-20"
 author: "Miraclin Technologies"
 excerpt: "Why Zero Trust isn't optional anymore. Practical steps to implement identity-first security, micro-segmentation, and continuous verification for 2026 threats."
-image: "/hero-image.jpeg"
+image: "/zero-trust-security-2026.png"
 tags: ["Zero Trust", "Identity Security", "Cloud Security", "2026"]
 ---
 
