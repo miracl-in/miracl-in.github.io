@@ -3,7 +3,7 @@ title: "Full Stack Development Roadmap 2026: Complete Guide for Beginners"
 date: "2025-12-02"
 author: "Miraclin Technologies"
 excerpt: "Master full stack development with our comprehensive roadmap. Learn frontend, backend, databases, and deployment strategies for a successful career."
-image: "/hero-image.jpeg"
+image: "/full-stack-development-roadmap-2026.png"
 tags: ["Full Stack", "Web Development", "JavaScript", "Career"]
 ---
 
