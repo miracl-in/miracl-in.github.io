@@ -3,7 +3,7 @@ title: "Software Testing Automation: Complete Guide for 2026"
 date: "2025-12-08"
 author: "Miraclin Technologies"
 excerpt: "Master software testing automation with modern tools and frameworks. Comprehensive guide to building robust test automation strategies for 2026."
-image: "/hero-image.jpeg"
+image: "/software-testing-automation-guide-2026.png"
 tags: ["Testing", "Automation", "QA", "Software Quality", "DevOps", "2026"]
 keywords: "test automation, software testing, selenium, cypress, playwright, qa automation, testing frameworks, continuous testing"
 metaDescription: "Complete guide to software testing automation in 2026. Learn modern testing tools, frameworks, and strategies for building robust automated test suites."
