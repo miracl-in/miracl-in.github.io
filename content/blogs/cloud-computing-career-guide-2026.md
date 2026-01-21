@@ -3,7 +3,7 @@ title: "Cloud Computing Career Guide: AWS vs Azure in 2026"
 date: "2025-12-05"
 author: "Miraclin Technologies"
 excerpt: "Complete guide to starting your cloud computing career. Compare AWS and Azure certifications, salaries, and job opportunities."
-image: "/hero-image.jpeg"
+image: "/cloud-computing-career-guide-2026.png"
 tags: ["Cloud Computing", "AWS", "Azure", "Career"]
 ---
 
