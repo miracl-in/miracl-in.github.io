@@ -3,7 +3,7 @@ title: "Linux Security Best Practices for 2026"
 date: "2026-01-07"
 author: "Miraclin Technologies"
 excerpt: "Explore essential Linux security practices tailored for 2026 threats, ensuring robust protection for servers and systems."
-image: "/hero-image.jpeg"
+image: "/linux-security-best-practices-2026.png"
 tags: ["Linux Security", "Cybersecurity", "Hardening"]
 ---
 
