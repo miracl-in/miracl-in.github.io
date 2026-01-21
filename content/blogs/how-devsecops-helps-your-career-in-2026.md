@@ -3,7 +3,7 @@ title: "How DevSecOps Helps Your Career in 2026 and Beyond"
 description: "A detailed guide on how a DevSecOps career improves salary, job security, and long-term growth for DevOps, Cloud, and Security professionals."
 date: "2026-01-21"
 author: "Miraclin Technologies"
-image: "/hero-image.jpeg"
+image: "/devsecops-career-2026.png"
 excerpt: "Discover how DevSecOps helps your career by combining DevOps, cloud security, and automation to deliver higher salaries, stronger job security, and future-proof IT roles."
 tags: ["DevSecOps Career", "DevSecOps Jobs", "DevOps Security", "Cloud Security Careers"]
 ---
