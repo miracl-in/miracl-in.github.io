@@ -3,7 +3,7 @@ title: "DevSecOps Best Practices for 2026"
 date: "2025-12-03"
 author: "Miraclin Technologies"
 excerpt: "Discover the essential DevSecOps practices that every organization should implement for secure software delivery."
-image: "/hero-image.jpeg"
+image: "/devsecops-best-practices-2026.png"
 tags: ["DevSecOps", "Security", "DevOps"]
 ---
 
