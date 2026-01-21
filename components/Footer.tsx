@@ -51,15 +51,21 @@ export default function Footer() {
 
             {/* Company Info */}
             <div className="md:col-span-2">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-2">
                 <img
                   src="/favicon.ico"
                   alt="Miraclin Technologies"
                   className="w-10 h-10 rounded-lg object-cover"
                 />
-                <span className="text-xl font-bold">
-                  Miraclin Technologies
-                </span>
+                <div>
+                  <span className="text-xl font-bold block">
+                    Miraclin Technologies
+                  </span>
+                  <span className="text-xs text-gray-400">
+                    Miraclin Technologies Private Limited • CIN: U62099TN2026PTC188323<br />
+                    Registered in India
+                  </span>
+                </div>
               </div>
 
               <p className="text-gray-300 mb-4 max-w-md">
