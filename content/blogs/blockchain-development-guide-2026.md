@@ -3,7 +3,7 @@ title: "Blockchain Development Guide 2026: From Basics to Smart Contracts"
 date: "2025-11-30"
 author: "Miraclin Technologies"
 excerpt: "Complete guide to blockchain development. Learn blockchain fundamentals, smart contracts, Web3, and how to build decentralized applications."
-image: "/hero-image.jpeg"
+image: "/blockchain-development-guide-2026.png"
 tags: ["Blockchain", "Web3", "Smart Contracts", "Cryptocurrency"]
 ---
 
