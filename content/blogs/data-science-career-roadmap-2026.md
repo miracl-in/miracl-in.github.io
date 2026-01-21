@@ -3,7 +3,7 @@ title: "Data Science Career Roadmap: Complete Guide for 2026"
 date: "2025-12-08"
 author: "Miraclin Technologies"
 excerpt: "Comprehensive roadmap to building a successful data science career in 2026. Learn essential skills, tools, and strategies to become a data scientist."
-image: "/hero-image.jpeg"
+image: "/data-science-career-roadmap-2026.png"
 tags: ["Data Science", "Career", "Machine Learning", "Analytics", "2026"]
 keywords: "data science career, machine learning, data analyst, python data science, statistics, big data, career roadmap"
 metaDescription: "Complete data science career roadmap for 2026. Learn essential skills, tools, and step-by-step guide to become a successful data scientist."
