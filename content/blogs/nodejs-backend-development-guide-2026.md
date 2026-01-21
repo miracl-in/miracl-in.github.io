@@ -3,7 +3,7 @@ title: "Node.js Backend Development Guide 2026: Master Server-Side JavaScript"
 date: "2025-12-16"
 author: "Miraclin Technologies"
 excerpt: "Complete Node.js backend development roadmap for 2026. Learn server-side JavaScript, APIs, databases, and microservices architecture for modern web applications."
-image: "/hero-image.jpeg"
+image: "/nodejs-backend-development-guide-2026.png"
 tags: ["Node.js", "Backend Development", "JavaScript", "API Development", "Microservices"]
 ---
 
