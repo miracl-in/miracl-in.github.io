@@ -3,7 +3,7 @@ title: "MongoDB Database Design 2026: NoSQL Document Database Mastery"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master MongoDB database design in 2026. Learn document modeling, indexing strategies, aggregation pipelines, and performance optimization techniques."
-image: "/hero-image.jpeg"
+image: "/mongodb-database-design-2026.png"
 tags: ["MongoDB", "NoSQL", "Database Design", "Aggregation", "Performance"]
 ---
 
