@@ -3,7 +3,7 @@ title: "Digital Marketing and SEO Mastery Guide 2026: Boost Your Online Presence
 date: "2025-12-10"
 author: "Miraclin Technologies"
 excerpt: "Complete digital marketing and SEO guide for 2026. Learn search engine optimization, social media marketing, and online advertising strategies for business growth."
-image: "/hero-image.jpeg"
+image: "/digital-marketing-seo-guide-2026.png"
 tags: ["Digital Marketing", "SEO", "Social Media Marketing", "Online Advertising", "Content Marketing"]
 ---
 
