@@ -3,7 +3,7 @@ title: "Docker Containerization Guide 2026: Modern Application Deployment"
 date: "2025-12-23"
 author: "Miraclin Technologies"
 excerpt: "Master Docker containerization in 2026. Learn container orchestration, multi-stage builds, security best practices, and production deployment strategies."
-image: "/hero-image.jpeg"
+image: "/docker-containerization-guide-2026.png"
 tags: ["Docker", "Containerization", "DevOps", "Deployment", "Orchestration"]
 ---
 
