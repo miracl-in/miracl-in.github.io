@@ -3,7 +3,7 @@ title: "Java Programming Career Guide 2026: Master Enterprise Development"
 date: "2025-12-10"
 author: "Miraclin Technologies"
 excerpt: "Complete Java programming career roadmap for 2026. Learn core concepts, frameworks, and career opportunities in enterprise Java development."
-image: "/hero-image.jpeg"
+image: "/java-programming-career-guide-2026.png"
 tags: ["Java", "Programming", "Career", "Enterprise Development", "Spring Framework"]
 ---
 
