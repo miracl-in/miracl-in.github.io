@@ -1,9 +1,12 @@
 ---
-title: "AWS AgentCore and Amazon Bedrock: Building Enterprise AI Agents in 2026"
-excerpt: "A deep technical guide to AWS AgentCore and Amazon Bedrock, explaining how modern AI agents are built, orchestrated, secured, and deployed in real enterprise systems."
-author: "Miraclin Technologies"
+title: "AWS AgentCore & Amazon Bedrock: Building Enterprise AI Agents in 2026"
 date: "2026-01-28"
-tags: ["AWS", "AgentCore", "Amazon Bedrock", "AI Agents", "Generative AI", "Cloud Architecture"]
+author: "Miraclin Technologies"
+excerpt: "A deep technical guide to building production-grade enterprise AI agents using AWS AgentCore and Amazon Bedrock. Learn architecture, security, orchestration, and real-world implementation strategies for 2026."
+image: "/aws-agentcore-bedrock-enterprise-ai-agents-guide-2026.png"
+tags: ["AWS", "AgentCore", "Amazon Bedrock", "AI Agents", "Generative AI", "Cloud Architecture", "LLM"]
+keywords: "AWS AgentCore, Amazon Bedrock, enterprise AI agents, generative AI on AWS, LLM orchestration, AI agent architecture, cloud AI 2026"
+metaDescription: "Complete technical guide to AWS AgentCore and Amazon Bedrock for building secure, scalable enterprise AI agents in 2026. Covers architecture, IAM, tools, orchestration, and best practices."
 ---
 
 # AWS AgentCore and Amazon Bedrock: Building Enterprise AI Agents in 2026
