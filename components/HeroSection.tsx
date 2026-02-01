@@ -8,7 +8,7 @@ export default function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-10">
         <ScrollAnimation className="flex-1 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
-            #1 Tech Training Institute in Thanjavur
+            Tech Training Institute in Thanjavur
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             Master AI, DevSecOps, Cloud Computing & more with expert-led training. 100% job assistance, hands-on projects, and industry-recognized certifications in Thanjavur.
