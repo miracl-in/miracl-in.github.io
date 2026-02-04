@@ -8,13 +8,13 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Courses", href: "/courses", hasDropdown: true },
   { name: "Projects", href: "/project-support" },
-  { name: "Student Login", href: "https://miraclin.fsociety.in/", external: true },
   { name: "Blog", href: "/blog" },
   { name: "Team", href: "/team", hidden: true },
   { name: "About", href: "/about" },
   { name: "Career", href: "/career" },
   { name: "FAQ", href: "/faq", hidden: true },
-  { name: "Contact", href: "/contact" }
+  { name: "Contact", href: "/contact" },
+  { name: "Login", href: "https://miraclin.fsociety.in/", external: true }
 ]
 
 const courses = [
