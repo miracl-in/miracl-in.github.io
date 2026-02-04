@@ -101,7 +101,7 @@ export default function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-white hover:bg-white/20 hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium transform hover:-translate-y-0.5 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out text-sm md:text-base"
+                className={`px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-white hover:bg-white/20 hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium transform hover:-translate-y-0.5 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out text-sm md:text-base ${link.name === 'Login' ? 'animate-pulse' : ''}`}
               >
                 {link.name}
               </a>
@@ -164,7 +164,7 @@ export default function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block px-4 py-2 text-white hover:bg-white/20 rounded-lg transition-colors"
+                className={`block px-4 py-2 text-white hover:bg-white/20 rounded-lg transition-colors ${link.name === 'Login' ? 'animate-pulse' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
