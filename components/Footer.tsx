@@ -14,36 +14,12 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Initialize AdSense safely
-  useEffect(() => {
-    try {
-      // @ts-ignore
-      (window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (err) {
-      console.error("AdSense error:", err)
-    }
-  }, [])
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
   return (
     <>
-      {/* AdSense - Above Footer */}
-      <div className="border-t border-gray-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8">
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block", minHeight: "200px" }}
-            data-ad-client="ca-pub-1999706408810094"
-            data-ad-slot="4965524167"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
-        </div>
-      </div>
-
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
