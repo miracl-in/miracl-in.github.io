@@ -5,6 +5,34 @@ export default function HeroSection() {
   return (
     <main className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+      
+      {/* Student Portal Floating Badge */}
+      <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20">
+        <a 
+          href="https://miraclin.fsociety.in/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative block bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-0.5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+        >
+          <div className="bg-white rounded-lg p-3 relative">
+            <div className="flex items-center gap-2 mb-1">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-xs font-semibold text-gray-700">30+ Students</span>
+            </div>
+            
+            <div className="flex items-center gap-2">
+              <span className="text-sm">🎓</span>
+              <div>
+                <div className="text-sm font-bold text-gray-800">Student Portal</div>
+                <div className="text-xs text-blue-600 group-hover:text-purple-600 transition-colors">
+                  Access Now →
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
       <div className="relative max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-10">
         <ScrollAnimation className="flex-1 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
