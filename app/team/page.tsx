@@ -2,9 +2,9 @@ const teamMembers = [
   {
     id: 7,
     name: "Aldrin Wilfred A",
-    role: "Senior Consultant",
-    bio: "Experienced Consultant (from fsociety.in) specializing in DevSecOps and Application Security. Provides personalized guidance and mentorship to students.",
-    expertise: ["Security+", "DevOps", "DevSecOps", "Jenkins", "Python", "JavaScript", "Linux", "AWS", "Azure", "Deep learning"],
+    role: "Training Consultant",
+    bio: "Experienced professional (fsociety.in) specializing in DevSecOps and Application Security. Provides personalized guidance and mentorship to students.",
+    expertise: ["OSINT", "Security+", "DevOps", "Dev(Sec)Ops", "Jenkins", "Python", "JavaScript", "Linux", "AWS", "Azure", "Deep learning"],
     experience: "7+ years",
     education: "M.S (Europe) - Telecommunications",
     image: "AW"
