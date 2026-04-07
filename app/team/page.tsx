@@ -1,7 +1,7 @@
 const teamMembers = [
   {
     id: 7,
-    name: "Aldo A",
+    name: "Aldo",
     role: "Training Consultant",
     bio: "Experienced professional (fsociety.in) specializing in DevSecOps and Application Security. Provides personalized guidance and mentorship to students.",
     expertise: ["OSINT", "Security+", "DevOps", "Dev(Sec)Ops", "Jenkins", "Python", "JavaScript", "Linux", "AWS", "Azure", "Deep learning"],
