@@ -3,6 +3,8 @@ export interface DownloadItem {
   description: string
   fileName: string
   category: string
+  type?: 'pdf' | 'video'
+  externalUrl?: string
 }
 
 export const downloads: DownloadItem[] = [
@@ -35,5 +37,21 @@ export const downloads: DownloadItem[] = [
     description: "Complete syllabus and course outline for Python programming.",
     fileName: "PythonSyllabus.pdf",
     category: "Python"
+  },
+  {
+    title: "Jenkins Installation",
+    description: "Session recording: Jenkins Installation & Freestyle Job creation.",
+    fileName: "Jenkins_Installation.mp4",
+    category: "DevOps",
+    type: "video",
+    externalUrl: "https://drive.google.com/file/d/1bx1ZpfYluJZq8qeSSnB8EzG9PZVW44Bu/preview"
+  },
+  {
+    title: "Jenkins Pipeline",
+    description: "Online Session 02 recording: Jenkins installation & Jenkins pipeline creation, discussion on pipeline workflow.",
+    fileName: "Jenkins_pipeline.mp4",
+    category: "DevOps",
+    type: "video",
+    externalUrl: "https://drive.google.com/file/d/1iry8n-hvvijTMwL5g9ymyFaQhwsu_rUp/preview"
   },
 ]
