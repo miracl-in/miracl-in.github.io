@@ -12,7 +12,7 @@ const navLinks = [
   { name: "Team", href: "/team", hidden: true },
   { name: "Downloads", href: "/downloads" },
   { name: "About", href: "/about" },
-  { name: "Career", href: "/career" },
+  { name: "Career", href: "/career", hidden: true },
   { name: "FAQ", href: "/faq", hidden: true },
   { name: "Contact", href: "/contact" },
   { name: "Login", href: "https://miraclin.fsociety.in/", external: true }
