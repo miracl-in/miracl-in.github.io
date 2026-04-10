@@ -13,7 +13,9 @@ function useContainerWidth(isOpen: boolean) {
   const [width, setWidth] = useState(800)
   const updateWidth = useCallback(() => {
     const w = window.innerWidth
-    setWidth(w < 640 ? w - 32 : Math.min(w - 96, 900))
+    // Modal is max-w-5xl (1024px) with padding, account for scrollbar and modal padding
+    const modalWidth = w < 640 ? w - 16 : Math.min(w - 64, 1024)
+    setWidth(modalWidth - 48) // subtract internal padding
   }, [])
   useEffect(() => {
     if (!isOpen) return
@@ -142,7 +144,7 @@ export default function DownloadsPage() {
                   loading={<p className="text-gray-500 py-20">Loading PDF...</p>}
                   error={<p className="text-red-500 py-20">Failed to load PDF.</p>}
                 >
-                  <Page pageNumber={pageNumber} width={containerWidth * scale} />
+                  <Page pageNumber={pageNumber} width={containerWidth} scale={scale} />
                 </Document>
               </div>
 
