@@ -13,9 +13,8 @@ function useContainerWidth(isOpen: boolean) {
   const [width, setWidth] = useState(800)
   const updateWidth = useCallback(() => {
     const w = window.innerWidth
-    // Modal is max-w-5xl (1024px) with padding, account for scrollbar and modal padding
-    const modalWidth = w < 640 ? w - 16 : Math.min(w - 64, 1024)
-    setWidth(modalWidth - 48) // subtract internal padding
+    // Mobile: full width, Desktop: modal max-width minus padding
+    setWidth(w < 640 ? w : Math.min(w - 64, 1024) - 48)
   }, [])
   useEffect(() => {
     if (!isOpen) return
@@ -137,7 +136,7 @@ export default function DownloadsPage() {
               </div>
 
               {/* PDF Content */}
-              <div className="flex-1 overflow-auto flex justify-center bg-gray-100 p-2 sm:p-4">
+              <div className="flex-1 overflow-auto flex justify-center bg-gray-100 p-0 sm:p-4">
                 <Document
                   file={`/downloads/${selectedFile}`}
                   onLoadSuccess={({ numPages }) => setNumPages(numPages)}
