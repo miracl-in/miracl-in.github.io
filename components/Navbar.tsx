@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Projects", href: "/project-support" },
   { name: "Blog", href: "/blog" },
   { name: "Team", href: "/team", hidden: true },
+  { name: "Downloads", href: "/downloads" },
   { name: "About", href: "/about" },
   { name: "Career", href: "/career" },
   { name: "FAQ", href: "/faq", hidden: true },
