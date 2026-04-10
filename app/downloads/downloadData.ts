@@ -54,4 +54,44 @@ export const downloads: DownloadItem[] = [
     type: "video",
     externalUrl: "https://drive.google.com/file/d/1iry8n-hvvijTMwL5g9ymyFaQhwsu_rUp/preview"
   },
+  {
+    title: "Basic Git Actions Using GitHub Web UI",
+    description: "Walkthrough of essential Git operations using the GitHub web interface.",
+    fileName: "git-actions-github-ui",
+    category: "DevOps",
+    type: "video",
+    externalUrl: "https://drive.google.com/file/d/1ikQ-BCwhQSiibrijVEBek6FZbKtip7oy/preview"
+  },
+  {
+    title: "Git Basics Using Terminal",
+    description: "Git actions and essential commands using the terminal.",
+    fileName: "git-basics-terminal",
+    category: "DevOps",
+    type: "video",
+    externalUrl: "https://drive.google.com/file/d/1vaGx3p-3ned413Xh0-cFUZsj3qMecQjp/preview"
+  },
+  {
+    title: "Git Checkout Using Jenkins",
+    description: "Demonstration of Git checkout operations integrated with Jenkins.",
+    fileName: "git-checkout-jenkins",
+    category: "DevOps",
+    type: "video",
+    externalUrl: "https://drive.google.com/file/d/1zcgg1x3o85dzdwG_Qi6OQ1bVpqkmqqjx/preview"
+  },
+  {
+    title: "Git Checkout Using Jenkins - Private Repo",
+    description: "Git checkout from a private repository using ssh connection.",
+    fileName: "git-checkout-jenkins-private",
+    category: "DevOps",
+    type: "video",
+    externalUrl: "https://drive.google.com/file/d/1W3s9A-ttqq1PYqB-Pj8rPh87YYJfi_Bx/preview"
+  },
+  {
+    title: "Git Checkout Using Jenkins - Dockerized Python App",
+    description: "Git checkout and building a Dockerized Python application using Jenkins freestyle job.",
+    fileName: "git-checkout-jenkins-docker-python",
+    category: "DevOps",
+    type: "video",
+    externalUrl: "https://drive.google.com/file/d/1yTVhReIgoAd0D-ELil8fxqYLotJDek6A/preview"
+  },
 ]
