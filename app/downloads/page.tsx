@@ -109,73 +109,64 @@ export default function DownloadsPage() {
         )}
 
         {selectedFile && (
-          <div className="fixed inset-0 bg-black/60 z-50 flex items-end sm:items-center justify-center sm:p-4">
-            <div className="bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl w-full sm:max-w-5xl h-[95vh] sm:max-h-[90vh] flex flex-col">
+          <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center">
+            <div className="bg-white shadow-2xl w-full h-full sm:w-[95vw] sm:h-[90vh] sm:max-w-5xl sm:rounded-2xl flex flex-col">
               {/* Toolbar */}
-              <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 border-b bg-gray-50 rounded-t-2xl">
-                <h3 className="font-semibold text-gray-800 truncate mr-2 text-sm sm:text-base">{selectedTitle}</h3>
-                <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-                  <button onClick={() => setScale(s => Math.max(0.5, s - 0.2))} className="p-1.5 sm:p-2 hover:bg-gray-200 rounded-lg" title="Zoom out">
+              <div className="flex items-center justify-between px-3 py-2 border-b bg-gray-50 sm:rounded-t-2xl flex-shrink-0">
+                <h3 className="font-semibold text-gray-800 truncate mr-2 text-xs sm:text-base">{selectedTitle}</h3>
+                <div className="flex items-center gap-1 flex-shrink-0">
+                  <button onClick={() => setScale(s => Math.max(0.5, s - 0.2))} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Zoom out">
                     <FaSearchMinus className="text-gray-600 text-sm" />
                   </button>
-                  <span className="text-xs sm:text-sm text-gray-500 w-10 sm:w-14 text-center">{Math.round(scale * 100)}%</span>
-                  <button onClick={() => setScale(s => Math.min(2.5, s + 0.2))} className="p-1.5 sm:p-2 hover:bg-gray-200 rounded-lg" title="Zoom in">
+                  <span className="text-xs text-gray-500 w-10 text-center">{Math.round(scale * 100)}%</span>
+                  <button onClick={() => setScale(s => Math.min(2.5, s + 0.2))} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Zoom in">
                     <FaSearchPlus className="text-gray-600 text-sm" />
                   </button>
                   <a
                     href={`/downloads/${selectedFile}`}
                     download
-                    className="hidden sm:inline-block px-3 py-1.5 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors ml-2"
+                    className="px-2 sm:px-3 py-1 sm:py-1.5 bg-blue-600 text-white text-xs sm:text-sm rounded-lg hover:bg-blue-700 transition-colors ml-1"
                   >
                     Download
                   </a>
-                  <button onClick={() => setSelectedFile(null)} className="p-1.5 sm:p-2 hover:bg-gray-200 rounded-lg ml-1" title="Close">
+                  <button onClick={() => setSelectedFile(null)} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Close">
                     <FaTimes className="text-gray-600 text-sm" />
                   </button>
                 </div>
               </div>
 
               {/* PDF Content */}
-              <div className="flex-1 overflow-auto flex justify-center bg-gray-100 p-0 sm:p-4">
+              <div className="flex-1 overflow-auto bg-gray-100">
                 <Document
                   file={`/downloads/${selectedFile}`}
                   onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-                  loading={<p className="text-gray-500 py-20">Loading PDF...</p>}
-                  error={<p className="text-red-500 py-20">Failed to load PDF.</p>}
+                  loading={<p className="text-gray-500 py-20 text-center">Loading PDF...</p>}
+                  error={<p className="text-red-500 py-20 text-center">Failed to load PDF.</p>}
                 >
                   <Page pageNumber={pageNumber} width={containerWidth} scale={scale} />
                 </Document>
               </div>
 
-              {/* Page Navigation + mobile download */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 px-3 sm:px-4 py-2 sm:py-3 border-t bg-gray-50 rounded-b-2xl">
-                {numPages > 1 && (
-                  <>
-                    <button
-                      onClick={() => setPageNumber(p => Math.max(1, p - 1))}
-                      disabled={pageNumber <= 1}
-                      className="p-2 hover:bg-gray-200 rounded-lg disabled:opacity-30"
-                    >
-                      <FaChevronLeft />
-                    </button>
-                    <span className="text-xs sm:text-sm text-gray-600">Page {pageNumber} of {numPages}</span>
-                    <button
-                      onClick={() => setPageNumber(p => Math.min(numPages, p + 1))}
-                      disabled={pageNumber >= numPages}
-                      className="p-2 hover:bg-gray-200 rounded-lg disabled:opacity-30"
-                    >
-                      <FaChevronRight />
-                    </button>
-                  </>
-                )}
-                <a
-                  href={`/downloads/${selectedFile}`}
-                  download
-                  className="sm:hidden px-3 py-1.5 bg-blue-600 text-white text-xs rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Download
-                </a>
-              </div>
+              {/* Page Navigation */}
+              {numPages > 1 && (
+                <div className="flex items-center justify-center gap-3 px-3 py-2 border-t bg-gray-50 sm:rounded-b-2xl flex-shrink-0">
+                  <button
+                    onClick={() => setPageNumber(p => Math.max(1, p - 1))}
+                    disabled={pageNumber <= 1}
+                    className="p-2 hover:bg-gray-200 rounded-lg disabled:opacity-30"
+                  >
+                    <FaChevronLeft />
+                  </button>
+                  <span className="text-xs sm:text-sm text-gray-600">Page {pageNumber} of {numPages}</span>
+                  <button
+                    onClick={() => setPageNumber(p => Math.min(numPages, p + 1))}
+                    disabled={pageNumber >= numPages}
+                    className="p-2 hover:bg-gray-200 rounded-lg disabled:opacity-30"
+                  >
+                    <FaChevronRight />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         )}
