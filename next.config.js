@@ -6,7 +6,11 @@ const nextConfig = {
     unoptimized: true
   },
   compress: true,
-  poweredByHeader: false
+  poweredByHeader: false,
+  webpack: (config) => {
+    config.resolve.alias.canvas = false
+    return config
+  }
 }
 
 module.exports = nextConfig
