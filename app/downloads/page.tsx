@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
 import { downloads } from './downloadData'
-import { FaFilePdf, FaChevronLeft, FaChevronRight, FaTimes, FaSearchPlus, FaSearchMinus } from 'react-icons/fa'
+import { FaFilePdf, FaVideo, FaChevronLeft, FaChevronRight, FaTimes, FaSearchPlus, FaSearchMinus } from 'react-icons/fa'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
 
@@ -42,7 +42,10 @@ export default function DownloadsPage() {
     ? downloads
     : downloads.filter(d => d.category === filterCategory)
 
-  const selectedTitle = downloads.find(d => d.fileName === selectedFile)?.title
+  const selectedItem = downloads.find(d => d.fileName === selectedFile)
+  const selectedTitle = selectedItem?.title
+  const isVideo = selectedItem?.type === 'video'
+  const isExternal = !!selectedItem?.externalUrl
 
   // Lock body scroll when modal is open
   useEffect(() => {
@@ -94,8 +97,10 @@ export default function DownloadsPage() {
                 }`}
               >
                 <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-r from-red-500 to-pink-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <FaFilePdf className="text-white text-lg sm:text-xl" />
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-r ${
+                    item.type === 'video' ? 'from-purple-500 to-indigo-500' : 'from-red-500 to-pink-500'
+                  } flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                    {item.type === 'video' ? <FaVideo className="text-white text-lg sm:text-xl" /> : <FaFilePdf className="text-white text-lg sm:text-xl" />}
                   </div>
                   <div className="min-w-0">
                     <h3 className="font-bold text-gray-800 mb-1 text-sm sm:text-base">{item.title}</h3>
@@ -115,40 +120,64 @@ export default function DownloadsPage() {
               <div className="flex items-center justify-between px-3 py-2 border-b bg-gray-50 sm:rounded-t-2xl flex-shrink-0">
                 <h3 className="font-semibold text-gray-800 truncate mr-2 text-xs sm:text-base">{selectedTitle}</h3>
                 <div className="flex items-center gap-1 flex-shrink-0">
-                  <button onClick={() => setScale(s => Math.max(0.5, s - 0.2))} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Zoom out">
-                    <FaSearchMinus className="text-gray-600 text-sm" />
-                  </button>
-                  <span className="text-xs text-gray-500 w-10 text-center">{Math.round(scale * 100)}%</span>
-                  <button onClick={() => setScale(s => Math.min(2.5, s + 0.2))} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Zoom in">
-                    <FaSearchPlus className="text-gray-600 text-sm" />
-                  </button>
-                  <a
-                    href={`/downloads/${selectedFile}`}
-                    download
-                    className="px-2 sm:px-3 py-1 sm:py-1.5 bg-blue-600 text-white text-xs sm:text-sm rounded-lg hover:bg-blue-700 transition-colors ml-1"
-                  >
-                    Download
-                  </a>
+                  {!isVideo && (
+                    <>
+                      <button onClick={() => setScale(s => Math.max(0.5, s - 0.2))} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Zoom out">
+                        <FaSearchMinus className="text-gray-600 text-sm" />
+                      </button>
+                      <span className="text-xs text-gray-500 w-10 text-center">{Math.round(scale * 100)}%</span>
+                      <button onClick={() => setScale(s => Math.min(2.5, s + 0.2))} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Zoom in">
+                        <FaSearchPlus className="text-gray-600 text-sm" />
+                      </button>
+                    </>
+                  )}
+                  {!isExternal && (
+                    <a
+                      href={`/downloads/${selectedFile}`}
+                      download
+                      className="px-2 sm:px-3 py-1 sm:py-1.5 bg-blue-600 text-white text-xs sm:text-sm rounded-lg hover:bg-blue-700 transition-colors ml-1"
+                    >
+                      Download
+                    </a>
+                  )}
                   <button onClick={() => setSelectedFile(null)} className="p-1.5 hover:bg-gray-200 rounded-lg" title="Close">
                     <FaTimes className="text-gray-600 text-sm" />
                   </button>
                 </div>
               </div>
 
-              {/* PDF Content */}
-              <div className="flex-1 overflow-auto bg-gray-100">
-                <Document
-                  file={`/downloads/${selectedFile}`}
-                  onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-                  loading={<p className="text-gray-500 py-20 text-center">Loading PDF...</p>}
-                  error={<p className="text-red-500 py-20 text-center">Failed to load PDF.</p>}
-                >
-                  <Page pageNumber={pageNumber} width={containerWidth} scale={scale} />
-                </Document>
+              {/* Content */}
+              <div className="flex-1 overflow-auto bg-gray-100 flex items-center justify-center">
+                {isVideo && isExternal ? (
+                  <iframe
+                    src={selectedItem?.externalUrl}
+                    className="w-full h-full"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  />
+                ) : isVideo ? (
+                  <video
+                    controls
+                    autoPlay
+                    className="max-w-full max-h-full"
+                    src={`/downloads/${selectedFile}`}
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <Document
+                    file={`/downloads/${selectedFile}`}
+                    onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+                    loading={<p className="text-gray-500 py-20 text-center">Loading PDF...</p>}
+                    error={<p className="text-red-500 py-20 text-center">Failed to load PDF.</p>}
+                  >
+                    <Page pageNumber={pageNumber} width={containerWidth} scale={scale} />
+                  </Document>
+                )}
               </div>
 
               {/* Page Navigation */}
-              {numPages > 1 && (
+              {!isVideo && numPages > 1 && (
                 <div className="flex items-center justify-center gap-3 px-3 py-2 border-t bg-gray-50 sm:rounded-b-2xl flex-shrink-0">
                   <button
                     onClick={() => setPageNumber(p => Math.max(1, p - 1))}
