@@ -3,7 +3,7 @@ title: "AWS Bastion Host Setup with NAT Gateway: Secure Private Subnet Access"
 date: "2026-05-08"
 author: "Miraclin Technologies"
 excerpt: "Learn how to set up a bastion host with NAT gateway in AWS. Secure your private instances while enabling outbound internet access through a step-by-step guide."
-image: "/aws-bastion-host-architecture-nat-gateway.png"
+image: "/aws-bastion-host-architecture-with-nat-gateway.png"
 tags: ["AWS", "Networking", "Security", "Bastion Host", "NAT Gateway", "VPC"]
 ---
 
