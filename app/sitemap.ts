@@ -40,6 +40,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/project-support',
     '/faq',
     '/privacy',
+    '/cookies',
+    '/downloads',
     '/locations/thanjavur'
   ].map(url => ({
     url,
@@ -57,14 +59,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog pages with higher priority for recent posts
   const blogSlugs = getAllBlogSlugs()
   const recentBlogPosts = [
-    'aws-agentcore-bedrock-enterprise-ai-agents-guide-2026.md',
-    'ai-vs-cloud-what-to-learn-first-2026.md',
-    'how-devsecops-helps-your-career-in-2026.md',
-    'llm-security-2026.md',
-    'mcp-security-2026.md',
-    'zero-trust-security-2026.md',
-    'cloud-security-best-practices-2026.md',
-    'linux-security-best-practices-2026.md',
+    'aws-agentcore-bedrock-enterprise-ai-agents-guide-2026',
+    'ai-vs-cloud-what-to-learn-first-2026',
+    'how-devsecops-helps-your-career-in-2026',
+    'llm-security-2026',
+    'mcp-security-2026',
+    'zero-trust-security-2026',
+    'cloud-security-best-practices-2026',
+    'linux-security-best-practices-2026',
     'edge-computing-development-guide-2026',
     'quantum-computing-programming-guide-2026',
     'microservices-architecture-guide-2026',
@@ -92,7 +94,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'mobile-app-development-trends-2026',
     'software-testing-automation-guide-2026',
     'full-stack-development-roadmap-2026',
-    'ai-machine-learning-career-2026'
+    'ai-machine-learning-career-2026',
+    'bastion-host-setup-with-nat-gateway-2026',
+    'ecs-fargate-python-hello-world-2026',
+    'devsecops-best-practices-2026',
+    'data-science-career-roadmap-2026',
+    'cloud-computing-career-guide-2026',
+    'cybersecurity-fundamentals-2026',
+    'blockchain-development-guide-2026',
+    'react-development-mastery-2026',
+    'getting-started-with-python-2026'
   ]
   
   const blogPages = blogSlugs.map(slug => ({
