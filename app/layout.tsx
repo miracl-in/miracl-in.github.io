@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     images: ['/hero-image.jpeg']
   },
   verification: {
-    google: 'your-google-verification-code'
+    //google: 'your-google-verification-code'
   }
 }
 
