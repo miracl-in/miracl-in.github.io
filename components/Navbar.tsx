@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <img 
-            src="/favicon.ico" 
+            src="/favicon_Image.png" 
             alt="Miraclin Technologies" 
             className="w-10 h-10 rounded-lg object-cover"
           />
