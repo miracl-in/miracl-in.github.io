@@ -10,11 +10,11 @@ import { FaFilePdf, FaVideo, FaChevronLeft, FaChevronRight, FaTimes, FaSearchPlu
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
 
 function useContainerWidth(isOpen: boolean) {
-  const [width, setWidth] = useState(800)
+  const [width, setWidth] = useState(900)
   const updateWidth = useCallback(() => {
     const w = window.innerWidth
-    // Mobile: full width, Desktop: modal max-width minus padding
-    setWidth(w < 640 ? w : Math.min(w - 64, 1024) - 48)
+    // Mobile: full width minus minimal padding, Desktop: fill the modal
+    setWidth(w < 640 ? w - 16 : Math.min(w * 0.95, 1024) - 32)
   }, [])
   useEffect(() => {
     if (!isOpen) return
@@ -147,7 +147,7 @@ export default function DownloadsPage() {
               </div>
 
               {/* Content */}
-              <div className="flex-1 overflow-auto bg-gray-100 flex items-center justify-center">
+              <div className="flex-1 overflow-auto bg-gray-100 flex items-start justify-center pt-4">
                 {isVideo && isExternal ? (
                   <iframe
                     src={selectedItem?.externalUrl}
