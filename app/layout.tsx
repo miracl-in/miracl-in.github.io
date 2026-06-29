@@ -81,7 +81,7 @@ export default function RootLayout({
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+91-9543813232",
-                "email": "miraclintech@gmail.com"
+                "email": "miraclin@fsociety.in"
               }
             })
           }}
