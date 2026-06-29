@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-2">
                 <img
-                  src="/favicon.ico"
+                  src="/favicon_Image.png"
                   alt="Miraclin Technologies"
                   className="w-10 h-10 rounded-lg object-cover"
                 />
@@ -60,7 +60,7 @@ export default function Footer() {
               </p>
 
               <p className="text-gray-300 text-sm">
-                📧 <a href="mailto:miraclintech@gmail.com" className="hover:text-white">miraclintech@gmail.com</a><br />
+                📧 <a href="mailto:miraclin@fsociety.in" className="hover:text-white">miraclin@fsociety.in</a><br />
                 📞 <a href="tel:+919543813232" className="hover:text-white">+91 95438 13232</a>
               </p>
             </div>
