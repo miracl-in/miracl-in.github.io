@@ -104,7 +104,7 @@ export default function CareerPage() {
                 </div>
                 <p className="text-gray-700 mb-6">{job.description}</p>
                 <a 
-                  href={`mailto:miraclintech@gmail.com?subject=Application for ${job.title}`}
+                  href={`mailto:miraclin@fsociety.in?subject=Application for ${job.title}`}
                   className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all"
                 >
                   Apply Now
@@ -119,7 +119,7 @@ export default function CareerPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Don't See a Perfect Fit?</h2>
           <p className="text-lg mb-6">We're always looking for talented individuals. Send us your resume!</p>
           <a 
-            href="mailto:miraclintech@gmail.com?subject=General Application"
+            href="mailto:miraclin@fsociety.in?subject=General Application"
             className="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:shadow-xl transition-all"
           >
             Send Your Resume
